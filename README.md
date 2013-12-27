@@ -19,7 +19,7 @@ The school work folder has my attempts at old South African Past Papers and in s
 my actual exam answers. I have not included the actual past papers but they should not be too
 difficult to find at respective high school websites or from teachers ect...
 There are also my feeble attempts at the Computer Olimpiad in 2011 and 2012.
-Some of the work is from exercises I did in class - I tended to to do exactly what was asked but
+Some of the work is from exercises I did in class - I tended not to to do exactly what was asked but
 do my own thing.
 
 The code here is not particularly good, but I would not like to loose it which is why I
