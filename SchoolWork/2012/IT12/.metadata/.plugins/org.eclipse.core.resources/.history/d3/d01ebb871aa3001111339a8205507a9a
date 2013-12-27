@@ -1,0 +1,33 @@
+package myClients;
+
+import javax.swing.JOptionPane;
+
+public class TestClients {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		ClientArr CA = new ClientArr();
+		char choice = ' ';
+		while (choice != 'Q')
+		{
+			choice = JOptionPane.showInputDialog("Menu\nA-Display Client Information\nB-Summarised Total Income\nC-Look up a client\nQ-Quit\nYour Choice:_").toUpperCase().charAt(0);
+			switch (choice){
+			case 'A': System.out.println(CA.toString());
+				break;
+			case 'B': System.out.println(CA.totalIncome());
+				break;
+			case 'C': String name = JOptionPane.showInputDialog("ENTER NAME:");
+						CA.searchClient(name);
+				break;
+			case 'Q':
+				break;
+			default: JOptionPane.showMessageDialog(null, "Invalid selection");
+				break;
+			}
+		}
+
+	}
+
+}

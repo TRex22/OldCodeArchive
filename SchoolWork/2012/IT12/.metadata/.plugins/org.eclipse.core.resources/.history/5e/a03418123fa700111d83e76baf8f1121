@@ -1,0 +1,64 @@
+package myGameScore;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class arrHeroes {
+	private Hero arrHeroes[] = new Hero[50];
+	private int counter ;
+	
+	public arrHeroes ()
+	{
+		try {
+			Scanner scFile = new Scanner (new File("Hero.txt"));
+			while (scFile.hasNext())
+			{
+				Scanner scLine = new Scanner(scFile.nextLine()).useDelimiter("#");
+				arrHeroes[counter] = new Hero (scLine.next(), scLine.nextInt(), scLine.nextInt(),scLine.next(), scLine.nextInt());
+				counter ++;
+				
+				scLine.close();
+			}
+			
+			scFile.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	public void addHero(String n, int h, int d, String t)
+	{
+		counter ++;
+		arrHeroes[counter]= new Hero (n, h, d, t, 0);
+	}
+	public String toString()
+	{
+		String out = "Player Statistics:\n" +
+				"Name\tHealth\tDamage\tType\t\tscore\n";
+		return out;
+	}
+	public String getHigherThanScore(int s)
+	{
+		String out = "";
+		for (int i = 0; i <counter;i++)
+		{
+			if (s<arrHeroes[counter].getScore())
+			{
+				out += ""+arrHeroes[counter].getName()+" "+arrHeroes[counter].getScore()+"\n";
+			}
+		}
+		return out;
+	}
+	public String getTotalHeroes()
+	{
+		String out = "";
+		
+		
+		return out;
+	}
+	
+	
+}

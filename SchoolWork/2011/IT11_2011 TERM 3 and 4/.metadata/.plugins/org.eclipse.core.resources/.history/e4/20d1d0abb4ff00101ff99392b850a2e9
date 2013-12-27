@@ -1,0 +1,23 @@
+package myMatches;
+
+import javax.swing.JOptionPane;
+
+public class Matches {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String sentence = JOptionPane.showInputDialog("Enter Sentence");
+		for (int i=0;i<sentence.length();i++)
+		{
+			String letter = ""+sentence.charAt(i);
+			if (letter.matches("^[AEIOUaeiou]\\w*"))
+			{
+				//if("AEIOUaeiou".indexOf(letter)>=0)
+				count++;
+			}
+		}
+	}
+
+}

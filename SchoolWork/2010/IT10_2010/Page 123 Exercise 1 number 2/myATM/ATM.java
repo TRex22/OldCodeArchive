@@ -1,0 +1,63 @@
+package myATM;
+
+import java.text.DecimalFormat;
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
+
+public class ATM {
+
+	/**
+	 * Input amount to withdraw
+	 * Input Current Balance
+	 * Compare Amount to balance
+	 * 	if there is enough money
+	 * 		deduct the amount from the balance
+	 * 		display new balance
+	 * 	if there is not enough money
+	 * 		display Sorry not enough money in your account
+	 * 		display Current Balance
+	 */
+	public static void main(String[] args) {
+		try {
+			DecimalFormat rand = new DecimalFormat("R#00.00");
+			double amount = Double.parseDouble(JOptionPane.showInputDialog
+					( "Enter Amount Of Money To Withdraw" ));
+			double balance = Math.random()*5000;
+			JFrame frame = new JFrame();
+			frame.setVisible(true);
+			
+			frame.setLocation(40,20);
+			frame.setTitle( "ATM Withdrawal" );
+			JTextArea txt = new JTextArea();
+			frame.add(txt);
+			txt.setTabSize(20);
+			txt.setText( "Money Withdraw" );
+			txt.append("\n---------------------------------------------");
+
+			if (amount<balance)
+			{
+				frame.setSize(250,130);
+				frame.setTitle( "Processing Transaction" );
+				txt.append("\nOriginal Balance Was: "+rand.format(balance));	
+				txt.append("\nAmount To Withdraw IS: "+rand.format(amount));
+				txt.append("\nNew Balance IS: "+rand.format(balance-amount));
+			}
+			else
+			{
+				frame.setSize(300,130);
+				frame.setTitle("Insufficient Funds");
+				txt.append("\nSorry Insufficient Funds In Your"
+						+"\nCurrent Balance For Your Transaction.");
+				txt.append("\nPlease Come Back When You Have More Money" +
+						"\nAnd Have A BAD Day!");
+			}
+
+
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "You Are The Retard Not The PC");
+		}
+	}
+
+}

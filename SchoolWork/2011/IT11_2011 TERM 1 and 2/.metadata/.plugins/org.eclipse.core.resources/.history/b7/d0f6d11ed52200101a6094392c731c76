@@ -1,0 +1,17 @@
+package myLine;
+
+public class Line {
+
+	//fields
+	int size = 2;
+	char pattern = '*';
+
+
+
+
+
+
+
+
+
+}

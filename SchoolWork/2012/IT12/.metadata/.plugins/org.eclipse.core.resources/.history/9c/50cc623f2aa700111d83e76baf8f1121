@@ -1,0 +1,29 @@
+package myGameScore;
+
+public class Hero {
+	private String name;
+	private int health;
+	private int damage;
+	private String type;
+	private int score;
+	
+	public Hero (String n, int health, int damage, String t, int s)
+	{
+		name = n;
+		health = h;
+		damage = d;
+		type = t;
+		score = s;
+	}
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+}

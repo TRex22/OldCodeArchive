@@ -1,0 +1,14 @@
+package myBank;
+
+public class AccountArray {
+	//array is of super
+	private BankAccount [] accArr = new BankAccount[100];
+	private int size;
+	
+	public AccountArray ()
+	{
+		size = 0;
+	}
+	
+	
+}

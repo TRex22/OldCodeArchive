@@ -1,0 +1,32 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.update.scheduler,3.2.300.v20100512,"org.eclipse.update.scheduler",1330596696669
+os,sysinfo,,,"win32",1330596696701
+arch,sysinfo,,,"x86",1330596696701
+ws,sysinfo,,,"win32",1330596696701
+locale,sysinfo,,,"en_ZA",1330596696701
+processors,sysinfo,,,"2",1330596696701
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1330596696701
+java.runtime.version,sysinfo,,,"1.6.0_29-b11",1330596696701
+java.specification.name,sysinfo,,,"Java Platform API Specification",1330596696701
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1330596696701
+java.specification.version,sysinfo,,,"1.6",1330596696701
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1330596696701
+java.version,sysinfo,,,"1.6.0_29",1330596696701
+java.vm.info,sysinfo,,,"mixed mode, sharing",1330596696701
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1330596696701
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1330596696701
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1330596696701
+java.vm.specification.version,sysinfo,,,"1.0",1330596696701
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1330596696701
+java.vm.version,sysinfo,,,"20.4-b02",1330596696701
+started,bundle,org.eclipse.m2e.usagedata,1.0.100.20110804-1717,"org.eclipse.m2e.usagedata",1330596696732
+started,bundle,org.eclipse.team.cvs.core,3.3.400.I20110510-0800,"org.eclipse.team.cvs.core",1330596696872
+started,bundle,org.eclipse.update.configurator,3.3.100.v20100512,"org.eclipse.update.configurator",1330596696919
+started,bundle,org.eclipse.update.core,3.2.500.v20110330,"org.eclipse.update.core",1330596696935
+started,bundle,org.eclipse.wb.discovery.core,1.1.0.r37x201109091028,"org.eclipse.wb.discovery.core",1330596696950
+started,bundle,org.eclipse.ui.console,3.5.100.v20110511,"org.eclipse.ui.console",1330596696981
+started,bundle,org.eclipse.team.cvs.ui,3.3.400.I20110510-0800,"org.eclipse.team.cvs.ui",1330596697247
+started,bundle,org.eclipse.epp.usagedata.ui,1.3.1.R201106061540,"org.eclipse.epp.usagedata.ui",1330596697761
+started,bundle,org.eclipse.wb.discovery.ui,1.1.0.r37x201109091028,"org.eclipse.wb.discovery.ui",1330596700507
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1330596701927
+opened,view,org.eclipse.ui.ide,3.7.0.v20110809-1737,"org.eclipse.ui.views.ProblemView",1330596703783

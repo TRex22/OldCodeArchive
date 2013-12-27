@@ -1,0 +1,32 @@
+package myQ3;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		int hExpected = Integer.parseInt(JOptionPane.showInputDialog("What is the expected amount of hours worked"));
+		String name = JOptionPane.showInputDialog("Enter Name of employee");
+		while(!name.equalsIgnoreCase("stop")){
+		Employee empl = new Employee();
+
+		name = JOptionPane.showInputDialog("Enter Name of employee");
+		int hWorked = Integer.parseInt(JOptionPane.showInputDialog("Enter the amount of hours worked"));
+		double hSalary = Double.parseDouble(JOptionPane.showInputDialog("Enter the hourly salary"));
+
+		empl.sethSalary(hSalary);
+		empl.sethWork(hWorked);
+
+
+		//empl.calcPay(hExpected);
+		JOptionPane.showMessageDialog(null, ""+name+" will be paid R"+empl.calcPay(hExpected));
+		}
+
+
+	}
+
+}

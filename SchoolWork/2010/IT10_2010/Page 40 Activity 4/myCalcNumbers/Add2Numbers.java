@@ -1,0 +1,33 @@
+package myCalcNumbers;
+
+import javax.swing.JOptionPane;
+
+public class Add2Numbers {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//input two numbers
+		String sNum1 = JOptionPane.showInputDialog(null, "Enter Number 1" );
+		String sNum2 = JOptionPane.showInputDialog(null, "Enter Number 2" );
+		//change strings to integers
+		int iNum1 = Integer.parseInt(sNum1);
+		int iNum2 = Integer.parseInt(sNum2);
+		//Add and Display
+		JOptionPane.showMessageDialog(null, 
+						"Number 1 IS: "+sNum1
+						+"\nAnd Number 2 IS: "+sNum2
+						+"\nThe Sum OF The Two Numbers IS:"
+						+"\nNumber 1 + Number 2 = "+(iNum1+iNum2)
+						+"\nNumber 1 - Number 2 = "+(iNum1-iNum2)
+						+"\nThe Product IS: "+(iNum1*iNum2));
+		
+		
+	
+	
+	
+	
+	}
+
+}

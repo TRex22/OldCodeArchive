@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 elements(s) to &apos;Page 122 Activity 5/myMaxMinNum&apos;&#x0D;&#x0A;- Original project: &apos;Page 122 Activity 5&apos;&#x0D;&#x0A;- Destination element: &apos;Page 122 Activity 5/myMaxMinNum&apos;&#x0D;&#x0A;- Original element: &apos;myMaxMinNum.MaxMinNum.java&apos;" description="Copy compilation unit" destination="/&lt;myMaxMinNum" element1="/&lt;myMaxMinNum{MaxMinNum.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1271923670108" units="1" version="1.0"/>
+</session>

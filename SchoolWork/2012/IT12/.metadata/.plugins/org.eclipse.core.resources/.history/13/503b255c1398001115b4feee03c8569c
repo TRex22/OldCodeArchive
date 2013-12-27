@@ -1,0 +1,33 @@
+package myLearner;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class LearnerArray {
+	private Learner[] lArr = new Learner[10];
+	private int size;
+	public LearnerArray()
+	{
+		size = 0;
+		try {
+			Scanner scFile = new Scanner (new File("Learner.txt"));
+			while (scFile.hasNext())
+			{
+				lArr[size]= new Learner(scFile.nextLine());
+				size++;
+			}
+			
+			
+			
+			scFile.close();
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+	
+}

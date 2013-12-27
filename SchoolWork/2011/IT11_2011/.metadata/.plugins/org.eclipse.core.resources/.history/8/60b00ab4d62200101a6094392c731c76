@@ -1,0 +1,23 @@
+package myLine;
+
+public class Line {
+
+	//fields
+	int size = 2;
+	char pattern = '*';
+	//method to draw a line
+	//1: shared: public = shared to all
+	//		  	 protected = shared with the
+	//			 private = not shared
+	//2: Does it return something
+	//			 void = return nothing, only does something
+	//			 if it does return something = state the data type
+	public void
+
+
+
+
+
+
+
+}

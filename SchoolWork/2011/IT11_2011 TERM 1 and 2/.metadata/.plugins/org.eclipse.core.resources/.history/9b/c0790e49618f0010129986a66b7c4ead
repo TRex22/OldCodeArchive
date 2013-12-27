@@ -1,0 +1,24 @@
+package myTest;
+
+import javax.swing.JOptionPane;
+
+public class Test {
+
+	/**
+	 *
+	 */
+	public static void main(String[] args) {
+		char test = 'X';
+		if (Character.isLetter(test)!=true)
+		{
+			System.out.println("this works");
+		}
+
+
+
+
+
+
+	}
+
+}

@@ -1,0 +1,74 @@
+program dad;
+
+uses crt, dos;
+
+var
+key : char;
+eat : string;
+
+begin
+clrscr;
+textcolor(1);
+writeln( 'Hellow dad' );
+textcolor(2);
+writeln( 'Hellow dad' );textcolor(3);
+writeln( 'Hellow dad' );textcolor(4);
+writeln( 'Hellow dad' );textcolor(5);
+writeln( 'Hellow dad' );textcolor(6);
+writeln( 'Hellow dad' );textcolor(7);
+writeln( 'Hellow dad' );textcolor(8);
+writeln( 'Hellow dad' );textcolor(9);
+writeln( 'Hellow dad' );textcolor(10);
+writeln( 'Hellow dad' );textcolor(11);
+writeln( 'Hellow dad' );textcolor(12);
+writeln( 'Hellow dad' );textcolor(13);
+writeln( 'Hellow dad' );textcolor(14);
+writeln( 'Hellow dad' );textcolor(15);
+writeln( 'Hellow dad' );textcolor(16);
+writeln( 'Hellow dad' );
+sound(330);
+delay(200);
+sound(440);
+delay(200);
+sound(550);
+delay(200);
+sound(660);
+delay(200);
+sound(660);
+delay(200);
+sound(550);
+delay(200);
+sound(440);
+delay(200);
+sound(330);
+delay(200);
+sound(330);
+delay(200);
+sound(440);
+delay(200);
+sound(550);
+delay(200);
+sound(660);
+delay(200);
+sound(660);
+delay(200);
+sound(550);
+delay(200);
+sound(440);
+delay(200);
+sound(330);
+delay(200);
+sound(440);
+delay(200);
+sound(550);
+delay(200);
+sound(660);
+delay(200);
+sound(770);
+delay(200);
+sound(880);
+delay(200);
+nosound;
+readln;
+clrscr;
+end.

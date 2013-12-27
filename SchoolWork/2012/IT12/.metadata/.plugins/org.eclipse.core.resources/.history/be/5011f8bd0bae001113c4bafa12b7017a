@@ -1,0 +1,27 @@
+package myBank;
+
+public class BankAccount {
+	private String owner;
+	private String accCode;
+	private String IDNo;
+	private double balance;
+	
+	public BankAccount (String o, String aC, String IDN, double ba)
+	{
+		setOwner(o);
+		accCode = aC;
+		IDNo = IDN;
+		balance = ba;
+		
+	}
+
+	public String getOwner() {
+		return owner;
+	}
+
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
+	
+	
+}

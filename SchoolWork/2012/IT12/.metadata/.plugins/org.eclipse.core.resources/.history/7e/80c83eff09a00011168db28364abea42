@@ -1,0 +1,13 @@
+package myXYZTrading;
+
+public class EmpAPP {
+	private static EmpArray objEmp = new EmpArray();
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+
+	}
+
+}

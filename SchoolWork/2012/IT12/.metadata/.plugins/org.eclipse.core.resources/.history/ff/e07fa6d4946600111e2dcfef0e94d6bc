@@ -1,0 +1,41 @@
+package myPrisoner;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class MainPrisoner {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		try {
+			Scanner scFile = new Scanner (new File("prisoners.txt"));
+			while(scFile.hasNext())
+			
+			{
+				String line=scFile.nextLine();
+				//# seperator
+				Scanner scLine = new Scanner(line).useDelimiter("#");
+				String name = scLine.next();
+				int term = scLine.nextInt();
+				int blockno = scLine.nextInt();
+				String crime = scLine.next();
+				
+				//obj of the prisoner classsssssssss
+				
+				Prisoner prisoner = new Prsioner();
+			
+			}
+			
+			
+			scFile.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

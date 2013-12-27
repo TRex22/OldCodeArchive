@@ -1,0 +1,30 @@
+package myQ2;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class CarReg {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String[] arr = new String[50];
+		int size = 0;
+		try {
+			Scanner scFile = new Scanner(new File("carreg.txt"));
+
+
+
+
+
+		scFile.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

@@ -1,0 +1,14 @@
+1#James Anna#1.23
+2#Gumede Kietha#2.42
+3#Geb Mussie#0.35
+999#Non-registered#1.25
+1#James Anna#0.26
+3#Geb Mussie#2.16
+999#Non-registered#1.56
+4#Mbuyisa Nthu#1.33
+2#Gumede Kietha#0.39
+5#Senzo Jiyane#2.22
+6#Shange Sli#1.12
+7#Ndlovu Prudent#3.20
+8#Ndlazi Muzi#1.30
+5#Senzo Jiyane#1.10

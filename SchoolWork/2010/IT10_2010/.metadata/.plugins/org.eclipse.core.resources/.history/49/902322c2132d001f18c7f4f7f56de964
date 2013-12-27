@@ -1,0 +1,64 @@
+package myWindow;
+
+import javax.swing.*;
+
+public class Window {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//try {
+			
+			
+			
+			
+			JFrame numah1 = new JFrame();
+			numah1 = setVisible(true);
+			numah1 = setSize(500,500);
+			numah1 = setLocation(40,20);
+			numah1 = setTitle( "FuckOFF" );
+			JTextArea txt = new JTextArea();
+			numah1.add(txt);
+			txt.setTabSize(20);
+			txt.setText( "WHY WHY WHY WHY WHY WHY WHY" );
+			txt.append( "HOW HOW HOW HOW HOW HOW HOW" );
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		//} catch (Exception e) {
+//
+		//	JOptionPane.showMessageDialog(null, "Unknown Error 1" );
+		//}
+
+	}
+
+	private static JFrame setTitle(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static JFrame setLocation(int i, int j) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static JFrame setSize(int i, int j) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static JFrame setVisible(boolean b) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

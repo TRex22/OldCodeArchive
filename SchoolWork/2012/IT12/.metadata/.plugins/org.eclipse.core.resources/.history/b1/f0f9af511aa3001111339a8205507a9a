@@ -1,0 +1,20 @@
+package myClients;
+
+import javax.swing.JOptionPane;
+
+public class TestClients {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		char choice = ' ';
+		while (choice != 'Q')
+		{
+			choice = JOptionPane.showInputDialog("Menu\nA-Display Client Information\nB-Summarised Total Income\nC-Look up a client\nQ-Quit\nYour Choice:_").toUpperCase().charAt(0);
+			
+		}
+
+	}
+
+}

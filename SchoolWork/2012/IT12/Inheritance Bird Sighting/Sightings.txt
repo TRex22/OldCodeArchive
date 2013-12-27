@@ -1,0 +1,100 @@
+1#5#m#Sable#WYPJZTTP78
+2#13#b#Ground Hornbill#JWGXGTWU23#0#1#10
+3#12#m#Pangolin#HBVLSDFJ91
+4#19#m#Banded Mongoose#NRTLNELK78
+5#9#b#Redcrested Korhaan#HQHHUQRF71#1#1#29
+6#18#b#European Roller#KJUFSDET80#1#0#7
+7#13#m#Aardwolf#ISQJDKYL67
+8#13#m#Steenbok#ZGEXXRKV59
+9#16#m#Roan#IIZSSLTH90
+10#13#m#Impala#RADDMYEG67
+11#9#b#Blue Waxbill#XUBAFOUD76#1#1#22
+12#4#b#Bateleur#MHWQXRDN71#0#1#8
+13#1#m#Spotted Hyena#DRUZOGKE59
+14#10#b#Namaqua Dove#RGKLXKKJ88#0#1#28
+15#7#m#Suricate#GVYSKQRI58
+16#1#m#Nyala#LRYBZEOM104
+17#6#m#Cape Fox#YVIQYSMP62
+18#3#b#Amur Falcon#JNJFAYIY24#1#1#14
+19#10#b#Coot#SKKJUDDC91#1#0#9
+20#17#m#Giraffe#ATRGZEBN65
+21#18#m#Sable#PWUQSKQZ60
+22#16#b#European Roller#XRKZEZZN46#1#1#13
+23#12#m#Kudu#MWHPWYEU28
+24#14#b#Yellowbilled Hornbill#JAMWJJRC78#0#1#28
+25#7#b#Tawny Eagle#ZROJVMOA100#0#0#5
+26#15#b#Yellowbilled Hornbill#YMOXDNOU51#1#0#16
+27#8#m#Pangolin#QMJEMHWX77
+28#12#m#Genet#PAFHPCDT74
+29#7#m#Elephant#OCCZHOZK61
+30#15#m#White Rhino#EQQOFGMF60
+31#4#m#Zebra#DHXHBPNV54
+32#11#b#Black Korhaan#JQTNIXNF56#0#1#25
+33#3#m#Otter#LYSBORYS71
+34#18#m#Aardvark#QLVEFHDJ78
+35#6#b#Heuglins Robin#JPNXBLKY24#0#0#18
+36#18#b#Cape Robin#FVNUXVZC66#0#1#8
+37#18#b#Lilacbreasted Roller#GAKUCADJ56#1#1#17
+38#9#b#Striped Kingfisher#YFKWDKJD70#0#0#18
+39#19#b#Lappetfaced Vulture#AJMMKXCC42#1#0#24
+40#19#b#Narina Trogon#GXTHFCWW62#1#1#20
+41#13#b#Rock Bunting#HENOZLGG80#1#1#10
+42#15#b#Black Korhaan#RAJOZFHN90#0#0#20
+43#8#b#European Roller#UWFSURNM53#1#0#17
+44#19#b#Lesser Flamingo#WWJKXLVX73#1#1#11
+45#17#m#Steenbok#TKJJAOZO70
+46#2#b#Harlequin Quail#YGVPEONH84#1#0#28
+47#4#m#Wild Dog#NEERIWJV34
+48#10#b#Senegal Lapwing#VGSGWULH97#1#1#6
+49#9#b#Secretary Bird#PNVBORHK80#0#0#19
+50#19#b#Cape Robin#SGBXBVJA43#1#1#12
+51#17#m#Leopard#MUYEWILN88
+52#19#m#Civet#IRMMKHFM51
+53#15#m#White Tailed Mongoose#BMIGZPFG64
+54#10#b#Bush Blackcap#VXPKZCVL100#0#0#6
+55#2#b#Rackettailed Roller#VBZFPWKG101#0#1#18
+56#13#b#Marabou Stork#SFDZZWWL69#0#0#25
+57#16#b#Gymnogene#SGVQMJSL91#0#0#16
+58#2#b#Dabchick#NACTINGA61#1#1#16
+59#3#m#Lion#PSUYCVSA56
+60#13#m#Aardvark#YFBVTUAE58
+61#14#b#Water Dikkop#GACLUUDD61#0#0#24
+62#14#b#Arnot's Chat#KBOHODCE89#1#1#22
+63#16#b#Heuglins Robin#DORHFWRD60#1#0#6
+64#9#m#Pangolin#ZOOUCNAN45
+65#6#b#Melba Finch#TDZHKZYB106#0#0#18
+66#5#m#Elephant#YJCSQGNW64
+67#4#m#Genet#BGRTRTOC67
+68#11#m#Dassie#KFIQPQOQ58
+69#11#m#Ratel#FJHWPRUD60
+70#1#m#Cape Fox#MRJVAQFT17
+71#6#b#Bennet's Woodpecker#YSKEBDSN79#1#0#29
+72#18#m#Serval#YWSFLMGM72
+73#9#m#Cheetah#ZDLWGWTT59
+74#1#m#Oribi#SHYFQMXK111
+75#10#b#Bateleur#UZVHPCEX67#0#1#6
+76#14#m#Leopard#DTUBRPEC71
+77#19#m#Sable#UHQWQSCR54
+78#16#b#Namaqua Dove#MDKQNTFC64#1#0#28
+79#13#b#Melba Finch#PLHPOYRH60#0#0#18
+80#4#b#Lilacbreasted Roller#NMAWJHHS34#0#0#11
+81#14#m#Roan#DOSBBJIP55
+82#19#m#Gemsbok#SGOJAEEZ56
+83#16#m#Buffalo#LYZVGWKW27
+84#14#m#Tsessebe#DHIPPDTB83
+85#15#b#Ground Hornbill#KLWBDWBC64#1#0#11
+86#2#m#Lion#YBCARGGA106
+87#9#b#Cattle Egret#MEHBFBET67#1#1#10
+88#12#b#Gymnogene#AHPJDKIY40#0#0#22
+89#7#b#Cape Robin#CNEWEUHH19#1#0#26
+90#15#b#Rackettailed Roller#EOQSKPRI56#1#0#19
+91#14#m#Squirrel#HPWPXFCA83
+92#18#m#White Rhino#WOTEZVAL80
+93#10#b#Ostrich#FFFRSIAB61#1#1#28
+94#8#m#Black Rhino#ZHIBNUAU62
+95#16#m#Slender Mongoose#NWSWUQLY42
+96#1#m#Civet#FINCBWUX48
+97#14#m#Blue Duiker#ZCNTEVRT62
+98#12#m#Springbok#ICUSKKVJ84
+99#18#b#Laughing Dove#QMIOFFIL59#0#1#6
+100#13#b#Spotted Dikkop#ZFBYNLOT58#1#0#21

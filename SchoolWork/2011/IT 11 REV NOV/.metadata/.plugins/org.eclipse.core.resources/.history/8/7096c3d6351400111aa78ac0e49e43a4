@@ -1,0 +1,71 @@
+package myAd;
+
+import javax.swing.JOptionPane;
+
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String ad = "Hello 123 %$#";
+		double lcost = 0.00;
+		int noWords = 1;//
+		int noDigits = 0;//
+		int noVowels = 0;//
+		int noConst =0;//
+		int noSpecial =0;//
+		for (int i =0; i<ad.length();i++)
+		{
+			char temp = ad.charAt(i);
+			if (Character.isWhitespace(temp))
+			{
+				noWords ++;
+			}
+		}
+		for (int i =0; i<ad.length();i++)
+		{
+			char temp = ad.charAt(i);
+			if (Character.isDigit(temp))
+			{
+				noDigits ++;
+			}
+		}
+		for (int i =0; i<ad.length();i++)
+		{
+			char temp = ad.charAt(i);
+
+			String vowels = "AEIOUaeiou";
+
+			if (vowels.indexOf(temp)>=0 )
+			{
+				noVowels ++;
+			}
+		}
+		for (int i =0; i<ad.length();i++)
+		{
+			char temp = ad.charAt(i);
+
+			String vowels = "AEIOUaeiou";
+
+			if (Character.isLetter(temp)&& vowels.indexOf(temp)<0&&!Character.isWhitespace(temp)&&!Character.isDigit(temp) )
+			{
+				noConst ++;
+			}
+		}
+		for (int i =0; i<ad.length();i++)
+		{
+			char temp = ad.charAt(i);
+			if (!Character.isWhitespace(temp)&&!Character.isLetterOrDigit(temp) )
+			{
+				noSpecial ++;
+			}
+		}
+		JOptionPane.showMessageDialog(null, "Words: "+noWords+" Vowels: "+noVowels+" Constanants: "+noConst+" Nos: "+noDigits+" Specials: "+noSpecial);
+
+
+
+
+	}
+
+}

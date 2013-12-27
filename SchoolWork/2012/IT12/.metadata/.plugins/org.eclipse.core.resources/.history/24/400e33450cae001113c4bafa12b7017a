@@ -1,0 +1,51 @@
+package myBank;
+
+public class BankAccount {
+	private String owner;
+	private String accCode;
+	private String IDNo;
+	private double balance;
+	
+	public BankAccount (String o, String aC, String IDN, double ba)
+	{
+		setOwner(o);
+		setAccCode(aC);
+		setIDNo(IDN);
+		setBalance(ba);
+		
+	}
+
+	public String getOwner() {
+		return owner;
+	}
+
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
+
+	public String getAccCode() {
+		return accCode;
+	}
+
+	public void setAccCode(String accCode) {
+		this.accCode = accCode;
+	}
+
+	public String getIDNo() {
+		return IDNo;
+	}
+
+	public void setIDNo(String iDNo) {
+		IDNo = iDNo;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	
+	
+}

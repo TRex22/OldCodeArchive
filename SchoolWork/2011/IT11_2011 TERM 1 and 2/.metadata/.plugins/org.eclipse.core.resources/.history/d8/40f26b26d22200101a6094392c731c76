@@ -1,0 +1,30 @@
+package myLine;
+
+import javax.swing.JOptionPane;
+
+public class UseLine {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//exec class
+		//extaciate
+
+		//Object 1 eat
+		//Instaciate an object of a class
+		Line eat = new Line();
+
+		JOptionPane.showMessageDialog(null, eat.size + " has a pettern: "+eat.pattern);
+
+		//Object 2 bug
+		Line bug = new Line();
+
+
+
+
+
+
+	}
+
+}

@@ -1,0 +1,57 @@
+package myWindow;
+
+import javax.swing.*;
+
+public class Window {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		try {
+			
+			
+			
+			
+		//	JFrame numah1 = new JFrame();
+		//	numah1 = setVisible(true);
+		//	numah1 = setSize(500,500);
+		//	numah1 = setLocation(40,20);
+		//	numah1 = setTitle( "FuckOFF" );
+		//	JTextArea txt = new JTextArea();
+		//	numah1.add(txt);
+		//	txt.setTabSize(20);
+		//	txt.setText( "WHY WHY WHY WHY WHY WHY WHY" );
+		//	txt.append( "HOW HOW HOW HOW HOW HOW HOW" );
+			
+			JFrame nameofframe = new JFrame();
+			//make visiable
+			nameofframe.setVisible(true);
+			nameofframe.setSize(600,500);
+			nameofframe.setLocation(20,20);
+			nameofframe.setTitle( "HELLO AND GOODBYE" );
+			//import text area
+			JTextArea txt = new JTextArea();
+			nameofframe.add(txt);
+			//display in text area
+			//fist set text then append after
+			txt.setTabSize(20);
+			txt.setText( "Why WHY HWYWHWH" );
+			txt.append( "\nHow How" );
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		} catch (Exception e) {
+
+		JOptionPane.showMessageDialog(null, "Unknown Error 1" );
+		}
+
+	
+	}}

@@ -1,0 +1,62 @@
+package myGameScore;
+
+import javax.swing.JOptionPane;
+
+public class GameApp {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		arrHeroes myHeroes = new arrHeroes();
+		char choice = ' ';
+		
+		while (choice != 'Q')
+		{
+			choice = JOptionPane.showInputDialog("Enter Choice:\n\n" +
+					"a: Display all heroes\n" +
+					"b: Display heroes with higher scores than me\n" +
+					"c: Display heroes details\n" +
+					"d: Add hero\n" +
+					"e: Display all party names\n" +
+					"f: Change a player's score\n" +
+					"q: quit").toUpperCase().charAt(0);
+			switch (choice)
+			{
+			case 'A':
+				System.out.println(myHeroes.toString());
+				break;
+			case 'B':
+				int s = Integer.parseInt(JOptionPane.showInputDialog("Enter Your Score"));
+				System.out.println(myHeroes.getHigherThanScore(s));
+				break;
+			case 'C':
+				System.out.println(myHeroes.getTotalHeroes()+"\nTotal Damage: "+myHeroes.getTotalDamage()+"\nTotal Health of Heroes: "+myHeroes.getTotalHealth());
+				break;
+			case 'D':
+				String n = JOptionPane.showInputDialog("Enter the heroes name");
+				int h = Integer.parseInt(JOptionPane.showInputDialog("Enter heroes health"));
+				int d = Integer.parseInt(JOptionPane.showInputDialog("Enter heroes damage"));
+				String t = JOptionPane.showInputDialog("Enter Heroes type");
+				
+				myHeroes.addHero(n, h, d, t);
+				break;
+			case 'E':
+				System.out.println("All Party Names\n\n"+myHeroes.getAllPartyNames());
+				break;
+			case 'F':
+				String name = JOptionPane.showInputDialog("Enter name of player");
+				int changeinscore = Integer.parseInt(JOptionPane.showInputDialog("Enter change in score"));
+				System.out.println(myHeroes.changeScore(name, changeinscore));
+				break;
+			case 'Q':
+				break;
+			default:
+				JOptionPane.showMessageDialog(null, "Wrong chocice try again.");
+				break;
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,39 @@
+package myQ3;
+
+import javax.swing.JOptionPane;
+
+public class WordTriangle {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//
+		//input.length())%2==0 && 
+		//the word must begin and end with the same character
+		String out = "";
+		boolean test = true;
+		String input = JOptionPane.showInputDialog("Enter Word");
+		char begin = input.charAt(0);
+		char end = input.charAt(input.length()-1);
+		//det if word has an even amount of chars
+		if (begin != end)
+		{
+			out = "Not suitable";
+			test = false;
+		}
+		else
+		{
+			test = true;
+		}
+		
+		if (test = true)
+		{
+			out
+		}
+	
+	
+	
+	}
+
+}

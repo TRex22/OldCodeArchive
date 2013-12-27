@@ -1,0 +1,50 @@
+package myQ3;
+
+public class Employee {
+	private int hWork;
+	private double hSalary;
+	public void sethWork(int hWork) {
+		this.hWork = hWork;
+	}
+	//public int gethWork() {
+	//	return hWork;
+	//}
+	public void sethSalary(double hSalary) {
+		this.hSalary = hSalary;
+	}
+	//public double gethSalary() {
+	//	return hSalary;
+	//}
+	public Employee()
+	{
+		hWork = 10;
+		hSalary = 20.00;
+	}
+	public double calcPay (int hMonth)
+	{
+		double pay = 0.00;
+		if (hWork >= hMonth)
+		{
+			int hOver = hWork-hMonth;
+
+			pay = (hMonth*hSalary)+(hOver*(2*hSalary));
+
+		}
+		else if (hWork<hMonth)
+		{
+			pay = (hWorked*hSalary);
+		}
+
+
+
+
+		return pay;
+	}
+
+
+
+
+
+
+
+}

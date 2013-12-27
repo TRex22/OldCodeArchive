@@ -1,0 +1,81 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+
+public class ArrayCrap {
+
+	/**
+	 * @param args
+	 * @throws FileNotFoundException
+	 */
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner scFile = new Scanner (new File("LibraryBooks.txt"));
+		String[] Title = new String [50];
+		int count = 0;
+		while (scFile.hasNext())
+		{
+
+			Scanner scLine = new Scanner(scFile.nextLine()).useDelimiter("#");
+			int BookNo = Integer.parseInt(scLine.next());
+			String author = scLine.next();
+			String title = scLine.next();
+			String media = scLine.next();
+			String Library = scLine.next();
+			Title[count]=title;
+			count ++;
+
+
+		}
+
+		//remove duplicates of title
+		String[] Temp = new String[50];
+		int counter = 0;
+		for (int i =0; i<count;i++)
+		{
+			boolean duplicate = false;
+			for (int j =i+1;j<count;j++)
+			{
+				if (Title[i].equalsIgnoreCase(Title[j]))
+				{
+					duplicate = true;
+				}
+			}
+		if (duplicate == false)
+		{
+			Temp[counter] = Title[i];
+			counter ++;
+		}
+		}
+		Title = Temp;
+		count = counter;
+
+		//sort array
+		for (int i =0; i<counter;i++)
+		{
+			for (int j =i+1 ; j<counter;j++)
+			{
+				if (Title[i].compareToIgnoreCase(Title[j])>0)
+				{
+					String swap = Title[i];
+					Title[i]= Title[j];
+					Title[j]=swap;
+				}
+			}
+		}
+
+		//display array 1
+		String message = "";
+		for (int i = 0; i<counter;i++)
+		{
+			message+= ""+Title[i]+"\n";
+		}
+		System.out.println(message);
+
+
+		scFile.close();
+	}
+
+}

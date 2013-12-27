@@ -1,0 +1,15 @@
+package myArrayTechniques;
+
+public class ArrayTechniques {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//Menu with choices
+		//input into array
+
+
+	}
+
+}

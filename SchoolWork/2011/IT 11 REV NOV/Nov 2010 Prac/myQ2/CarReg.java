@@ -1,0 +1,125 @@
+package myQ2;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+import javax.print.DocFlavor.CHAR_ARRAY;
+import javax.swing.JOptionPane;
+
+public class CarReg {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String[] arr = new String[50];
+		int size = 0;
+		try {
+			Scanner scFile = new Scanner(new File("carreg.txt"));
+
+			while (scFile.hasNext())
+			{
+				//Scanner scLine = new Scanner (scFile.nextLine());
+				arr[size]= scFile.nextLine();
+				size++;
+			}
+			String[] temp = new String[50];
+			int count = 0;
+			for (int i =0; i<size;i++)
+			{
+				boolean duplicate = false;
+				for (int j = i+1;j<size;j++)
+				{
+					if (arr[i].equalsIgnoreCase(arr[j]))
+					{
+						duplicate = true;
+					}
+				}
+				if (duplicate == false)
+				{
+					temp[count]=arr[i];
+					count ++;
+				}
+
+
+			}
+			arr=temp;
+			size = count;
+
+			for (int i =0 ; i<size;i++)
+			{
+				for (int j = i+1;j<size;j++)
+				{
+					if (arr[i].compareTo(arr[j])>0)
+					{
+						String swap = arr[i];
+						arr[i]=arr[j];
+						arr[j]=swap;
+					}
+				}
+			}
+
+			for (int i =0 ;i<size;i++)
+			{
+				System.out.println(arr[i]);
+			}
+
+			int nogpreg = 0;
+			for (int i=0; i<size;i++)
+			{
+				System.out.println("Gauteng registartion plates");
+				if (arr[i].contains("GP"))
+				{
+					System.out.println(arr[i]);
+					nogpreg++;
+				}
+			}
+			System.out.println("The Number of GP REGNOS left in array is: "+nogpreg);
+
+			for (int i=0; i<size;i++)
+			{
+				boolean IsCustom = false;
+				if (arr[i].length()>8||arr[i].length()<8)
+				{
+					IsCustom = true;
+				}
+				else if (arr[i].length()==8){
+
+				String first3 = arr[i].substring(0,3);
+				String nxt3 = arr[i].substring(3,6);
+				//String province = arr[i].substring(6,8);
+				for (int j =0;j<3;j++)
+				{
+					char tempf = first3.charAt(j);
+					if (!Character.isLetter(tempf))
+					{
+						IsCustom=true;
+					}
+					char tempn = nxt3.charAt(j);
+					if (!Character.isDigit(tempn))
+					{
+						IsCustom = true;
+					}
+				}
+
+				}
+
+				if (IsCustom == true)
+				{
+					System.out.println(arr[i]);
+				}
+
+			}
+
+
+		scFile.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			JOptionPane.showMessageDialog(null, "File Not Found");
+		}
+
+	}
+
+}

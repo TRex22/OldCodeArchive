@@ -1,0 +1,23 @@
+package myUsingMathMethods;
+
+import javax.swing.JOptionPane;
+
+public class UsingMathMethods {
+
+	/**
+	 * 
+	 */
+	public static void main(String[] args) {
+		JOptionPane.showMessageDialog(null, 
+				"10 to the power 5 ="
+				+ Math.pow(10,5));
+		JOptionPane.showMessageDialog(null,
+				"The squareroot of 44"+Math.sqrt(44));
+		
+	
+	
+	
+	
+	}
+
+}

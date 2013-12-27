@@ -1,0 +1,50 @@
+package myBirds;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class SightingApp {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		try {
+			Scanner scFile = new Scanner (new File("Sightings.txt"));
+			System.out.println("Sighting NO\tLodgeNO\tSpecies\tSpecies Description\tValidation Code\t\tdistance\t\tbig6\t\tflight\t");
+			
+			while (scFile.hasNext())
+			{
+				
+				Scanner scLine = new Scanner (scFile.nextLine()).useDelimiter("#");
+				int sightingNo = Integer.parseInt(scLine.next());
+				int LodgeNo = Integer.parseInt(scLine.next());
+				char Species = scLine.next().charAt(0);
+				String SpeciesDescr = scLine.next();
+				String ValidCode = scLine.next();
+				MammalSighting MS;
+				if (scLine.hasNext())
+				{
+					int distance =Integer.parseInt(scLine.next());
+					int big6 = Integer.parseInt(scLine.next());
+					int flight = Integer.parseInt(scLine.next());
+					MS = new BirdSighting(sightingNo, LodgeNo, Species, SpeciesDescr, ValidCode, distance, big6, flight);
+				}
+				else
+				{
+					MS = new MammalSighting(sightingNo, LodgeNo, Species, SpeciesDescr, ValidCode);
+				}
+			
+				System.out.println(MS.toString());
+				scLine.close();
+			}
+			scFile.close();
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+
+	}
+
+}

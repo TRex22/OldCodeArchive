@@ -1,0 +1,6 @@
+package myBank;
+
+public class AccountArray {
+	private BankAccount [] BA = new BankAccount[100];
+	private int size;
+}

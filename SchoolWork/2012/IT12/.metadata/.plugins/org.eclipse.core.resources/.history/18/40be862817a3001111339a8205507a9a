@@ -1,0 +1,30 @@
+package myClients;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class ClientArr {
+	private Client arrClient[] = new Client[50];
+	private int size;
+	
+	public ClientArr()
+	{
+		try {
+			Scanner scFile = new Scanner (new File("Clients.txt"));
+			while (scFile.hasNext())
+			{
+				Scanner scLine = new Scanner (scFile.nextLine()).useDelimiter("#");
+				
+				
+				size++;
+				scLine.close();
+			}
+			
+			scFile.close();
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,90 @@
+package myFF;
+
+public class Meal {
+	private String day;
+	private String meal;
+	private int NoFats;
+	private int NoProteins;
+	private int NoCarbs;
+	
+	public Meal (String day, String meal, int fats, int proteins, int carbohydrates)
+	{
+		this.setDay(day);
+		this.setMeal(meal);
+		setNoFats(fats);
+		setNoProteins(proteins);
+		setNoCarbs(carbohydrates);
+	}
+
+	public String getDay() {
+		return day;
+	}
+
+	public void setDay(String day) {
+		this.day = day;
+	}
+
+	public String getMeal() {
+		return meal;
+	}
+
+	public void setMeal(String meal) {
+		this.meal = meal;
+	}
+
+	public int getNoFats() {
+		return NoFats;
+	}
+
+	public void setNoFats(int noFats) {
+		NoFats = noFats;
+	}
+
+	public int getNoCarbs() {
+		return NoCarbs;
+	}
+
+	public void setNoCarbs(int noCarbs) {
+		NoCarbs = noCarbs;
+	}
+
+	public int getNoProteins() {
+		return NoProteins;
+	}
+
+	public void setNoProteins(int noProteins) {
+		NoProteins = noProteins;
+	}
+	public boolean noFats()
+	{
+		boolean test = false;
+		if (NoFats == 0)
+		{
+			test = true;
+		}
+		return test;
+	}
+	public int calculatePoints()
+	{
+	int NoPts = 0;
+	NoPts = (NoFats*4)+(NoProteins*2)+(NoCarbs*2);
+	if (NoFats==0)
+	{
+		NoPts = 2;
+	}
+	else if (NoFats >2)
+	{
+		NoPts +=10;
+	}
+	
+	return NoPts;
+	}
+	
+	public String toString()
+	{
+		calculatePoints();
+		return day+"\t"+NoFats+"\t"+NoProteins+"\t"+NoCarbs+"\t"+calculatePoints()+"\t"+meal;
+	}
+
+
+}

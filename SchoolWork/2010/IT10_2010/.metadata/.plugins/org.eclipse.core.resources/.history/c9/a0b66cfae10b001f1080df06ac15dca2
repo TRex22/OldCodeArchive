@@ -1,0 +1,15 @@
+package errors;
+
+import javax.swing.JOptionPane;
+
+public class usingifthenforerrors {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		JOptionPane.showMessageDialog(null,"This will show erros using IF THEN" );
+		
+	}
+
+}

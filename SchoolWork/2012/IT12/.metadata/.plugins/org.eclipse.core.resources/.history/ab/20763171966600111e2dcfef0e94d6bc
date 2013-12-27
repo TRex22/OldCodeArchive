@@ -1,0 +1,169 @@
+package myPrisoner;
+
+public class Prisoner {
+	private String name;
+	private int term;
+	private String workplace;
+	private int hours;
+	
+	//1.2
+	
+	public Prisoner (String n, int t, int b)
+	{
+		name =n;
+		term = t;
+		if (b==1)
+		{
+			workplace = "Laundry";
+		}
+		if (b==2)
+		{
+			workplace = "Library";
+		}
+		if (b==3)
+		{
+			workplace = "Gym";
+		}
+		if (b==4)
+		{
+			workplace = "Kitchen";
+		}
+		else
+		{
+			workplace = "invalid";
+		}
+		//1.2.2
+		hours = term*8*365;
+	}
+	
+	
+	//getter and setter
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getWorkplace() {
+		return workplace;
+	}
+	public void setWorkplace(String workplace) {
+		this.workplace = workplace;
+	}
+	public int getTerm() {
+		return term;
+	}
+	public void setTerm(int term) {
+		this.term = term;
+	}
+	public int getHours() {
+		return hours;
+	}
+	public void setHours(int hours) {
+		this.hours = hours;
+	}
+	
+	//1.3
+	public double calcPay()
+	{
+		double pay =hours;
+		if(workplace.equalsIgnoreCase("Laundry"))
+		{
+			pay = pay*5;
+			
+		}
+		else if(workplace.equalsIgnoreCase("Library"))
+		{
+			pay = pay*7;
+			
+		}
+		else if(workplace.equalsIgnoreCase("Gym"))
+		{
+			pay = pay*4.5;
+			
+		}
+		else if(workplace.equalsIgnoreCase("Kitchen"))
+		{
+			pay = pay*5.57;
+			
+		}
+		else
+		{
+			pay =0;
+			
+		}
+		return pay;
+		
+		
+		
+	}
+	
+	public String makeCode()
+	{
+		String code = "";
+		code = ""+name.charAt(0);
+		
+		int space = name.indexOf(" ");
+		String surname = "";
+		String firstname ;
+		if (space>0)
+		{
+			firstname = name.substring(0,space);
+		surname = name.substring(space+1);
+		}
+		else
+		{
+			firstname = name;
+			
+		}
+		String temp="";
+		String vowel = "AEIOUaeiou";
+		for (int i=0;i<firstname.length();i++)
+		{
+			char letter = firstname.charAt(i);
+			if (!vowel.contains(""+letter))
+			{
+				temp+=letter;
+			}
+		}
+		//get first non-vowel
+		code+=temp.charAt(0);
+		if (surname.equals(""))
+		{
+			code+=temp.charAt(1);
+		}
+		else
+		{
+			code+=surname.charAt(0);
+			temp="";
+			for (int i=0;i<surname.length();i++)
+			{
+				char letter = surname.charAt(i);
+				if (!vowel.contains(""+letter))
+				{
+					temp+=letter;
+				}
+			}
+			
+		}
+		code = code.toUpperCase();
+		//two random letters
+		for (int i = 1; i<=2;i++)
+		{//on ascii a =65 and z =90
+		//use (char) to chnage an integer to a character
+			
+			int value = (int)(Math.random()*(90-65)+65);
+			code += (char) value;
+		}
+		code+=temp.charAt(0);
+		return code;
+		
+	}
+	
+	public String toString()
+	{
+		return makeCode()+"\t"+name+"\t"+term+"\t"+workplace+"\t"+hours+"\t"+calcPay();
+	}
+	
+	
+}

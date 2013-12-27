@@ -1,0 +1,41 @@
+package mySquare;
+
+import javax.swing.JOptionPane;
+
+public class MainSquare {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int width = (int) (Math.random()*80+1);
+		//instanciate an object
+		//Square square = new Square (width);
+		//disp
+		
+		//add more
+		char ans = JOptionPane.showInputDialog("Is it a S=Square or a R+rectangle").toUpperCase().charAt(0);
+		//inst and object based on weather it is a square or rectprisim
+		//1) declare object
+		//no instanciate
+		Square square;
+		if (ans =='S')
+		{
+			
+			
+		}
+		else if (ans=='R')
+		{
+			
+		}
+		else
+		{
+			JOptionPane.showMessageDialog(null, "ERORORORORRORORORORORORO");
+		}
+		//System.out.println(square);
+		
+	
+
+	}
+
+}

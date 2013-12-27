@@ -1,0 +1,4 @@
+pacpass.exe
+
+mouse
+win

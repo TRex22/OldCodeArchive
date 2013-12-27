@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Fri Mar 05 11:28:44 GMT+02:00 2010
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=Page 73 Exercise 9 Number 3_fat.jar
+manifest.mergeall=true
+manifest.mainclass=myRealValues.RealValues
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

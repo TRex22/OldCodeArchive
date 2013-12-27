@@ -1,0 +1,52 @@
+program timer;
+
+uses crt,Dos;
+
+ var
+   f: text;
+   h, m, s, hund : Word; { For GetTime}
+   ftime : Longint; { For Get/SetFTime}
+   dt : DateTime; { For Pack/UnpackTime }
+                  { For WinDos use TDateTime }
+ function LeadingZero(w : Word) : String;
+ var
+   s : String;
+ begin
+      Str(w:0,s);
+   if Length(s) = 1 then
+     s := '0' + s;
+   LeadingZero := s;
+ end;
+ begin
+   Assign(f, 'TEST.TXT');
+   GetTime(h,m,s,hund);
+
+   Rewrite(f); { Create new file }
+   GetFTime(f,ftime); { Get creation time }
+   Writeln('File created at ',LeadingZero(h),
+           ':',LeadingZero(m),':',
+           LeadingZero(s));
+   UnpackTime(ftime,dt);
+   with dt do
+     begin
+       clrscr;
+       Writeln('File timestamp is ',
+               LeadingZero(hour),':',
+               LeadingZero(min),':',
+               LeadingZero(sec));
+       hour := 0;
+       min := 1;
+       sec := 0;
+       PackTime(dt,ftime);
+       Writeln('Setting file timestamp ',
+               'to one minute after midnight');
+
+       Reset(f); { Reopen file for reading }
+       { (Otherwise, close will update time) }
+       SetFTime(f,ftime);
+     end;
+   Close(f);   { Close file }
+ readln;
+ end.
+
+

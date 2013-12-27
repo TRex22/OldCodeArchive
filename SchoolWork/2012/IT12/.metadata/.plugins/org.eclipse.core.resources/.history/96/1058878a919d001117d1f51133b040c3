@@ -1,0 +1,76 @@
+package myXYZTrading;
+
+public class Employee {
+	private String firstName;
+	private String surname;
+	private String dob;//ccyymmdd
+	private Double salary;
+	private int dependent;
+	private char medAid;
+	
+	public Employee (String f, String s, String d, double sal, int de, char mA)
+	{
+		setFirstName(f);
+		setSurname(s);
+		setDob(d);
+		setSalary(sal);
+		setDependent(de);
+		setMedAid(mA);
+		
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getSurname() {
+		return surname;
+	}
+
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+
+	public String getDob() {
+		return dob;
+	}
+
+	public void setDob(String dob) {
+		this.dob = dob;
+	}
+
+	public Double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(Double salary) {
+		this.salary = salary;
+	}
+
+	public int getDependent() {
+		return dependent;
+	}
+
+	public void setDependent(int dependent) {
+		this.dependent = dependent;
+	}
+
+	public char getMedAid() {
+		return medAid;
+	}
+
+	public void setMedAid(char medAid) {
+		this.medAid = medAid;
+	}
+	
+	public String getDate()
+	{
+		return ""+dob.substring(6,7)+"//"+dob.substring(4,6)+"//"+dob.substring(0,3);
+	}
+	
+	
+}

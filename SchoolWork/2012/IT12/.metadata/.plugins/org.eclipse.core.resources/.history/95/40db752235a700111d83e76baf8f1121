@@ -1,0 +1,18 @@
+package myGameScore;
+
+import javax.swing.JOptionPane;
+
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String name = "Jason";
+		String vowels = "AIOUEaioue";
+		//String[] vowels = {"A","E","I","O","U"};
+		//int fconst = name.indexOf(name.contains(vowels));
+		JOptionPane.showMessageDialog(null, "Jason: pos vowel "+vowels.indexOf(name));
+	}
+
+}

@@ -1,0 +1,22 @@
+package myTest;
+
+import javax.swing.JOptionPane;
+
+public class Test {
+
+	/**
+	 *
+	 */
+	public static void main(String[] args) {
+		String strTest = "This is a test";
+		String strSub = strTest.substring(6,8);
+		JOptionPane.showMessageDialog(null, strSub);
+
+
+
+
+
+
+	}
+
+}

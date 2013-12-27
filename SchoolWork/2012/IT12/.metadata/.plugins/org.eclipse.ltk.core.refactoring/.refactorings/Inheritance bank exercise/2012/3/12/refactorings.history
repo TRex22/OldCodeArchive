@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Savings.txt&apos; to &apos;1ST Prelim Bank Exercise Inheritance&apos;&#x0D;&#x0A;- Original project: &apos;Inheritance bank exercise&apos;&#x0D;&#x0A;- Destination element: &apos;1ST Prelim Bank Exercise Inheritance&apos;&#x0D;&#x0A;- Original element: &apos;Savings.txt&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="=1ST Prelim Bank Exercise Inheritance" element1="Savings.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1332261938481" units="0" version="1.0"/>
+</session>

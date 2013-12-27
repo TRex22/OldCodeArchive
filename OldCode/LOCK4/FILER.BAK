@@ -1,0 +1,29 @@
+function pass : string;
+
+begin
+      clrscr;
+      writeln( '                      Lock 4.0 copyright Jason Chalom 2006' );
+      delay(200);
+      writeln;
+      writeln ( 'Password' );
+end;
+
+
+
+function by : string;
+
+      begin
+      writeln( 'Bypassed Password' );
+end;
+
+function nammm : string;
+var jh : string;
+      begin
+      repeat
+      clrscr;
+      writeln( '                      Lock 4.0 copyright Jason Chalom 2006' );
+      delay(200);
+      writeln( 'Name:' );
+      read(jh);
+      until(jh = '' );
+end;

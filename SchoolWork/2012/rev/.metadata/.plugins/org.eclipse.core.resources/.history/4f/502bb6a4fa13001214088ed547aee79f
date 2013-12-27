@@ -1,0 +1,10 @@
+package myfinal;
+
+public class GPLicense extends NationalLicense{
+
+	public GPLicense(int y, String l) {
+		super(y, l);
+		
+	}
+	
+}

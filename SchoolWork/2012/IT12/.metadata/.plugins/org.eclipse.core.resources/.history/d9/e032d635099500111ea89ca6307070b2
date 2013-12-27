@@ -1,0 +1,60 @@
+package myClothes;
+
+import javax.swing.JOptionPane;
+
+public class ClothesApp {
+
+	/**
+	 * 
+	 */
+	public static void main(String[] args) {
+		ClothesArray objCA = new ClothesArray();
+		char choice =' ';
+		
+		do {
+		
+		choice = JOptionPane.showInputDialog
+				("A> Display Wardrobe"+
+						"\nB> Sort Alphabetically"+
+						"\nC> Sort accroding to length of description"+
+						"\nD> Search for a garment"+
+						"\nE> Display all garments of a specific type"+
+						"\nF> Remove duplicates"+
+						"\nG> Delete a garment"+
+						"\nH> Instert a new garment\n"+
+						"\nX> Exit"
+						)
+				.toUpperCase().charAt(0);
+		
+		switch (choice){
+		case 'A':	System.out.println(objCA.display()); 
+			break;
+		case 'B': 	//call sort method	
+					objCA.sortAlpha();
+					//disp
+					JOptionPane.showMessageDialog(null, "Sorted List\n\n"+objClothes.display());
+			break;
+		case 'C':
+			break;
+		case 'D':
+			break;
+		case 'E':
+			break;
+		case 'F':
+			break;
+		case 'G':
+			break;
+		case 'H':
+			break;
+		case 'X':
+			break;
+		default:
+			break;
+		
+		
+			}
+		}while (choice !='X');
+
+	}
+
+}

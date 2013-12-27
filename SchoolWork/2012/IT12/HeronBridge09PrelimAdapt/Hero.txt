@@ -1,0 +1,9 @@
+Andrews#600#30#Vernon#500
+Bradley#400#55#Machine#500
+Fell#400#50#Sailor#500
+Fouie#200#45#Goldy Locks#400
+Holmes#560#40#Barbarian#500
+Janneker#600#30#Vernon#500
+Klein#400#703#Paladin#800
+Morgan#120#70#Witch#600
+Muddiman#350#50#Cheese#500

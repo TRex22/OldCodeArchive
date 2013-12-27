@@ -1,0 +1,34 @@
+package myprep;
+
+import javax.swing.JOptionPane;
+
+public class Factors {
+
+	/**
+	 * Print menu
+	 * 			MENU
+	 * 	1.	print factors
+	 * 	2. 	print pattern
+	 * 	3. 	exit
+	 * Menu is a loop and after each option it must repeat until 3 is pressed
+	 * if 1 is selected
+	 * 	ask user for a number
+	 * 	determine its factors
+	 * 	print factors "The factors of variable are:..."
+	 */
+	public static void main(String[] args) {
+
+		int menu = 0;
+
+		do
+		{
+			menu = Integer.parseInt(JOptionPane.showInputDialog( "			Menu			"+"\n" +
+					"1. 	Print Factors\n" +
+					"2.		Print Pattern\n" +
+					"3.		Exit" ));
+		}
+		while (menu != 3);
+
+	}
+
+}

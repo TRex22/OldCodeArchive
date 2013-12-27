@@ -1,0 +1,2 @@
+INDEX VERSION 1.126+C:\Users\TRex22\Desktop\IT 11 REV NOV\.metadata\.plugins\org.eclipse.jdt.core
+4252450008.index

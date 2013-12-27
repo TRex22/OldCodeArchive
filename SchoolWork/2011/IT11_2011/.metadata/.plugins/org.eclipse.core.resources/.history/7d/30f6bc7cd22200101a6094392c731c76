@@ -1,0 +1,31 @@
+package myLine;
+
+import javax.swing.JOptionPane;
+
+public class UseLine {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//exec class
+		//extaciate
+
+		//Object 1 eat
+		//Instaciate an object of a class
+		//ClassName ObjectName = new ClassName();
+		Line eat = new Line();
+
+		JOptionPane.showMessageDialog(null, "stripe has a size of "+eat.size + " and has a pattern of: "+eat.pattern);
+
+		//Object 2 bug
+		Line bug = new Line();
+
+
+
+
+
+
+	}
+
+}

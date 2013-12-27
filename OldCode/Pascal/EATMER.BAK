@@ -1,0 +1,69 @@
+function begi : string;
+
+     begin
+     gotoxy(26,11);
+     write( 'Eatmer Copyright Jason Chalom' );
+
+end;
+
+function burns : string;
+
+         begin
+         gotoxy(24,9);
+         write( '*                               *' );
+         gotoxy(24,10);
+         write( '*                               *' );
+         gotoxy(24,12);
+         write( '*                               *' );
+         gotoxy(24,13);
+         write( '*                               *' );
+end;
+
+function sides1 : string;
+
+         begin
+         gotoxy(24,8);
+         write( '*********************************' );
+
+end;
+
+function sides2 : string;
+
+         begin
+
+         gotoxy(24,14);
+         write( '*********************************' );
+end;
+
+function sou : string;
+
+         begin
+         sound(900);
+         delay(200);
+         sound(100);
+         delay(200);
+         sound(900);
+         delay(200);
+         sound(100);
+         delay(200);
+         sound(500);
+         delay(400);
+         sound(600);
+         delay(200);
+         sound(650);
+         delay(100);
+         sound(750);
+         delay(250);
+         sound(850);
+         delay(200);
+         sound(900);
+         delay(200);
+         sound(100);
+         delay(200);
+         sound(900);
+         delay(200);
+         sound(100);
+         delay(350);
+         nosound;
+
+end;

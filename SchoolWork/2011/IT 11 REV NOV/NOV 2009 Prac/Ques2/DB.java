@@ -1,0 +1,24 @@
+package Ques2;
+import java.sql.*;
+
+
+public class DB
+{
+    private Connection conn = null;
+
+
+    public DB()
+    {
+       try
+       {
+	    conn = DriverManager.getConnection ("jdbc:odbc:Library.mdb");   // connection to the database
+	    System.out.println ();
+	    System.out.println ("Connection to database successfully established");
+       }
+       catch(Exception e)
+       {
+	    System.out.println("Failed to get connection");
+	    e.printStackTrace();
+       }
+    }
+}

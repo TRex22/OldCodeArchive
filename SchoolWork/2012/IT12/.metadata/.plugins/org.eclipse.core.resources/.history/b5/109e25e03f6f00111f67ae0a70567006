@@ -1,0 +1,41 @@
+package myBirds;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class SightingApp {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		try {
+			Scanner scFile = new Scanner (new File("Sightings.txt"));
+			while (scFile.hasNext())
+			{
+				Scanner scLine = new Scanner (scFile.nextLine()).useDelimiter("#");
+				int sightingNo = Integer.parseInt(scLine.next());
+				int LodgeNo = Integer.parseInt(scLine.next());
+				char Species = scLine.next().charAt(0);
+				String SpeciesDescr = scLine.next();
+				String ValidCode;
+				if (scLine.hasNext())
+				{
+					int distance;
+					int big6;
+					int flight;
+				}
+				
+				
+				scLine.close();
+			}
+			scFile.close();
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+
+	}
+
+}

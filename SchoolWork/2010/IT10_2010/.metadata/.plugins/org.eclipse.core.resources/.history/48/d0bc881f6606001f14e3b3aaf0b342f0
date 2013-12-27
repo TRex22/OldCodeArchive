@@ -1,0 +1,31 @@
+package myMakeLabels;
+
+import javax.swing.JOptionPane;
+
+public class MakeLabels {
+
+	/**
+	 * IT10 2010 21 Jan 2010 Jason Chalom Page 33 Activity 1
+	 */
+	public static void main(String[] args) {
+		//System.out.println( "***********************" );
+		//System.out.println( "*    Jason Chalom     *" );
+		//System.out.println( "*         IT          *" );
+		//System.out.println( "***********************" );
+		//OR
+		String subject;
+		subject = JOptionPane.showInputDialog( "Enter Subject Name Below:" );  
+		System.out.println( "*********************  "+
+							"\n*  Jason Chalom     *"+
+							"\n*        "  + subject+ "         *"+
+							"\n*   Grade 10S	     *"+
+							"\n*********************");
+		
+	
+	
+	
+	
+	
+	}
+
+}

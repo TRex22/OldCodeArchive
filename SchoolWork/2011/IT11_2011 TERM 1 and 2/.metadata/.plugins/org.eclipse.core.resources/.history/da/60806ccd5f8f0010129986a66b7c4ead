@@ -1,0 +1,25 @@
+package myTest;
+
+import javax.swing.JOptionPane;
+
+public class Test {
+
+	/**
+	 *
+	 */
+	public static void main(String[] args) {
+		String a = "a";
+		String b = "B";
+		if (a.compareToIgnoreCase(b)<0)
+		{
+			System.out.println(a+" before "+b);
+		}
+
+
+
+
+
+
+	}
+
+}

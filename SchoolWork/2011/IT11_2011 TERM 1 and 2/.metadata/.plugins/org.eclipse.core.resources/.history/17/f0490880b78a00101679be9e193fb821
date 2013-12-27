@@ -1,0 +1,60 @@
+package myRevisionStrings;
+
+import javax.swing.JOptionPane;
+
+public class RevisionStrings {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String sentence = JOptionPane.showInputDialog("Enetr a darn sentence");
+		char menu = ' ';
+
+		menu = JOptionPane.showInputDialog( "1)First Letter capital letter \n2) First letter capital letters, other small letters\n3)Count the words\4)Count letters\n5)Count digits\n6)remove Digits\n7) Count a letter\n8)Backwards\n0) exit").toUpperCase().charAt(0);
+		do{
+		if (menu == '1')
+		{
+			String temp = "";
+			char caps = sentence.toUpperCase().charAt(0);
+			temp = caps+sentence.substring(1);
+			JOptionPane.showMessageDialog(null, temp);
+
+
+
+		}
+		else if (menu == '2')
+		{
+			String temp = "";
+			char caps = sentence.toUpperCase().charAt(0);
+			temp = caps+sentence.toLowerCase().substring(1);
+			JOptionPane.showMessageDialog(null, temp);
+
+		}
+		else if (menu == '3')
+		{
+			int noWords = 1;
+			for (int i =0 ;i<sentence.length();i++)
+			{
+				char temp = sentence.charAt(i);
+				if (Character.isWhitespace(temp))
+				{
+					noWords += 1;
+				}
+			}
+			JOptionPane.showMessageDialog(null, "There is "+noWords+" words");
+		}
+		else if (menu == '4')
+		{
+
+		}
+
+
+		}while(menu != '0');
+
+
+
+
+	}
+
+}

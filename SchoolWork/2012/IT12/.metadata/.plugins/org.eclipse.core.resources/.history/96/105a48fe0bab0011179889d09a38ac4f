@@ -1,0 +1,110 @@
+package myGameScore;
+
+public class Hero {
+	private String name;
+	private int health;
+	private int damage;
+	private String type;
+	private int score;
+//parm constructors
+	public Hero (String n, int h, int d, String t, int s)
+	{
+		setName(n);
+		setHealth(h);
+		setDamage(d);
+		setType(t);
+		setScore(s);
+	}
+//accessor and getters
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getHealth() {
+		return health;
+	}
+	public void setHealth(int health) {
+		this.health = health;
+	}
+	public int getDamage() {
+		return damage;
+	}
+	public void setDamage(int damage) {
+		this.damage = damage;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public int getScore() {
+		return score;
+	}
+	//public void setScore(int score) {
+		//this.score = score;
+	//}
+	
+	//other methods
+	
+	public void setScore (int changeInScore)
+	{
+		this.score += changeInScore;
+	}
+	
+	public String toString()
+	{
+		return ""+name+"\t"+health+"\t"+damage+"\t"+type+"\t"+score;
+	}
+	
+	public String getPartyName ()
+	{
+		String usrname = "";
+		String vowels = "AEIOUaeiou";
+		
+		//String name = this.name.toUpperCase();
+		
+		boolean con = true;
+		int count = 0;
+		while (con == true || count < name.length())
+		{
+			if (!vowels.contains(""+name.charAt(count)))
+			{
+				usrname += ""+name.toUpperCase().charAt(count);
+				//iposC = vowels.indexOf(name);
+				con = false;
+			}
+			
+			
+			count ++;
+		}
+		count = 0;
+		while (con = false)
+		{
+			if (vowels.contains(""+name.charAt(count)))
+			{
+				usrname += ""+name.toUpperCase().charAt(count);
+				//iposC = vowels.indexOf(name);
+				con = true;
+			}
+			
+			
+			count ++;
+		}
+		usrname += ""+type.substring(0,4);
+		
+		return usrname;
+	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,3 @@
+wordiesw.exe
+cls
+exit

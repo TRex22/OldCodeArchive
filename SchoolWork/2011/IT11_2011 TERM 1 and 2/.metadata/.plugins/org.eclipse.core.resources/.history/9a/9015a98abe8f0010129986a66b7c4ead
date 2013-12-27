@@ -1,0 +1,29 @@
+package myPalindrome;
+
+public class Palindrome {
+
+	private String input;
+
+	public Palindrome ()
+	{
+		input = "";
+	}
+
+	public void setInput(String input) {
+		this.input = input;
+	}
+
+	public String getInput() {
+		return input;
+	}
+
+
+
+
+
+
+
+
+
+
+}

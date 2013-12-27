@@ -1,0 +1,23 @@
+package myDrawTraingle;
+
+public class DrawTriagngle {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String output = "";
+		for (int loop1=1;loop1<=5;loop++)
+		{
+			output+="*";
+		}
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package myArithmetic;
+
+public class Arithmetic {
+
+	//fields
+	//public = shared to anyone
+	//protected = shared to package
+	//private if not shared
+	private int num1;
+	private int num2;
+	//default constructor method
+	//purpose give the fields a default value
+	//it is called when you instanciate a method of the class
+	//it ALWAYS has the same name as the class
+	//leave out void/type
+	//It is ALWAYS public/protected
+	public Arithmetic()
+	{
+		num1=0;
+		num2=0;
+	}
+
+
+
+
+}

@@ -1,0 +1,19 @@
+package myEmployee;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		Employee PayCalc = new Employee();
+		String name = JOptionPane.showInputDialog("Enter Name");
+		int hWorked =
+
+
+	}
+
+}

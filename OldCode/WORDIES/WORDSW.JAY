@@ -1,0 +1,193 @@
+function dosver : string;
+
+var
+ver : word;
+begin
+  Ver := DosVersion;
+  Writeln('This is DOS version ', Lo(Ver), '.',
+Hi(Ver));
+end;
+
+
+Function dater : string;
+ const
+   days : array [0..6] of String[9] =
+     ('Sunday','Monday','Tuesday',
+      'Wednesday','Thursday','Friday',
+      'Saturday');
+ var
+   y, m, d, dow : Word;
+ begin
+   GetDate(y,m,d,dow);
+   Writeln('Today is ', days[dow],', ',
+           m:0, '/', d:0, '/', y:0);
+
+ end;
+
+ Function Timer : string;
+
+  var
+   f: text;
+   h, m, s, hund : Word; { For GetTime}
+   ftime : Longint; { For Get/SetFTime}
+   dt : tDateTime; { For Pack/UnpackTime }
+                  { For WinDos use TDateTime }
+ function LeadingZero(w : Word) : String;
+ var
+   s : String;
+ begin
+      Str(w:0,s);
+   if Length(s) = 1 then
+     s := '0' + s;
+   LeadingZero := s;
+ end;
+ begin
+   Assign(f, 'TEST.TXT');
+   GetTime(h,m,s,hund);
+
+   Rewrite(f); { Create new file }
+   GetFTime(f,ftime); { Get creation time }
+   Writeln('File created at ',LeadingZero(h),
+           ':',LeadingZero(m),':',
+           LeadingZero(s));
+   UnpackTime(ftime,dt);
+   with dt do
+     begin
+       clrscr;
+       Writeln('The time is: ',
+               LeadingZero(hour),':',
+               LeadingZero(min),':',
+               LeadingZero(sec));
+       hour := 0;
+       min := 1;
+       sec := 0;
+       PackTime(dt,ftime);
+       Writeln('To Set the time ',
+               'type the time or press enter');
+
+       Reset(f); { Reopen file for reading }
+       { (Otherwise, close will update time) }
+       SetFTime(f,ftime);
+     end;
+   Close(f);   { Close file }
+ end;
+
+
+Function ram : string;
+
+begin
+   Randomize;
+   repeat
+     { Write random numbers }
+   Write (Random(9000));
+   until KeyPressed;
+ end;
+
+
+
+Function invalid_characters : string;
+
+
+type st50 = string[50];
+var st : st50;
+    eat : string;
+function invalid (fst : st50 ) : boolean;
+var found : boolean;
+    count : byte;
+
+begin
+     found := false;
+     count := 0;
+     while (count < length(fst)) and (not found) do
+     begin
+          count := count + 1;
+          fst[count] := upcase(fst[count] );
+          if (fst[count] = 'I') or (fst[count] = 'O')
+                     then found := true;
+     end;
+     InValid := found;
+end;
+
+begin                   {main Program}
+
+writeln( 'Please enter the code to be checked ... ' );
+writeln( 'To exit type ''checked'' ');
+read(st);
+
+   if InValid(st) then
+   begin
+   readln;
+   writeln( st,' does contain Is and Os' );
+   readln;
+   end;
+
+   if not InValid(st) then begin
+   readln;
+   writeln(st,' does not contain any Is or Os' );
+   readln;
+   end;
+
+   if (st = '' ) then
+   begin
+   writeln( 'Please type some code in.' );
+   readln;
+   end;
+end;
+
+Function deleteme : string;
+
+var stg : string;
+    lt : string;
+begin
+
+writeln( '12 letter word or sentence' );
+read(stg);
+delete (stg, 2, 6);
+writeln (stg);
+delete (stg, 5 , 3);
+writeln (stg);
+delete (stg, 3, 1);
+writeln (stg);
+readln;
+end;
+
+Function change_2_num : string;
+type nums = 1..26;
+
+var ch : char;
+    num : nums;
+
+        Function change(fch:char):nums;                         {4.1}
+        begin
+             change := ord(fch) - 64;                           {4.2}
+        end;                                                    {4.3}
+
+begin {main}
+
+      write( 'Enter Character or word or sentence: ');          {1}
+      readln(ch);                                               {2}
+      ch := upcase(ch);                                         {3}
+      num := change(ch);                                        {4}
+      writeln(ch,' is letter no. ',num);                        {5}
+      readln;
+
+end;
+
+Function copyme : string;
+
+
+var loop : byte;
+    wrd  : string[20];
+    temp : string[20];
+
+
+     begin
+
+     write( 'Enter a word : ' );
+     read(wrd);
+
+     writeln;
+     temp := copy(wrd, 1, 3);                                     {1}
+     writeln( 'The first three letters are : ',temp);
+     readln;
+end;

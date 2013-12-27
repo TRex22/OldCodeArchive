@@ -1,0 +1,75 @@
+package main;
+
+import javax.swing.*;
+
+public class MemCheck {
+
+	/**
+	 * 
+	 */
+	public static void main(String[] args) {
+		JFrame frame = new JFrame();
+		JTextArea txt = new JTextArea();
+		JButton button1 = new JButton();
+		JButton button2 = new JButton();
+		JPanel panel = new JPanel();
+		
+		
+
+		frame.setVisible(true);
+		frame.add(txt);
+		frame.setSize(400,400);
+		long tot = 0;
+		long free = 0;
+		int i = 0;
+		int test = 1;
+		
+		button1.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent e) 
+			{
+				JOptionPane.showMessageDialog(null, "MemCheck By Jason Chalom" +
+						"\nCopyRight 2010" +
+						"\nVersion 0.1 Initial Test Version" +
+						"\nTotal Memory Shows the total memory that Java Virtual Machine has access to" +
+						"\nTherefore it is not exactly the amount of memory the computer has access to" +
+						"\nBut should reflect what most high level programs could possibly use." +
+						"\nPlease note the figures are rounded off and are an indication of buffer which" +
+						"\ninclude page file and ram which is virtual memory in Windows" +
+						"\nJava will try to use "+(((Runtime.getRuntime().maxMemory())/8)/1024)+" MB" +
+								"\nA Garbage Collector included with Java Runtime is also run constantly when this program" +
+								"\nis running.\n");
+
+			}			});
+		
+		button2.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent e) 
+			{
+				int i = 1;
+				System.exit(1);
+			}});
+		//while (i==1){
+		tot = (((Runtime.getRuntime().totalMemory())/8)/1024);
+		free = (((Runtime.getRuntime().freeMemory())/8)/1024);
+
+		txt.setText(""+
+				
+				"totalMemory: "+(int)tot+" MB"
+				+
+				
+				"\nfreeMemory: "+(int)free+" MB"
+			
+		);
+		Runtime.getRuntime().gc();
+		
+		{
+		}	
+	  //}
+		
+		
+		
+		
+		
+
+	}
+
+}

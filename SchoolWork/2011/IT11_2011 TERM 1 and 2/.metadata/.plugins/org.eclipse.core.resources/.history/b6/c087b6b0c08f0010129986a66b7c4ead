@@ -1,0 +1,13 @@
+package myPalindrome;
+
+public class UsePalindrome {
+
+	/**
+	 *
+	 */
+	public static void main(String[] args) {
+
+
+	}
+
+}

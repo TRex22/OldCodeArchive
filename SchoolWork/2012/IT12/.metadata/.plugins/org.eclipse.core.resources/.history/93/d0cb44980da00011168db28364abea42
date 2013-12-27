@@ -1,0 +1,40 @@
+package myXYZTrading;
+
+import javax.swing.JOptionPane;
+
+public class EmpAPP {
+	private static EmpArray objEmp = new EmpArray();
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		char choice = ' ';
+		
+		while (choice != 'X')
+		{
+			choice = JOptionPane.showInputDialog("" +
+					"1: Option 1 display payslips of all emplotess\n" +
+					"2: Option 2 List on med aid\n" +
+					"3: sort alphabetically" +
+					"4: Display names acc month of birthday" +
+					"X: Exit").toUpperCase().charAt(0);
+			switch (choice)
+			{
+			case '1':
+				break;
+			case '2':
+				break;
+			case '3':
+				break;
+			case '4':
+				break;
+			case 'X':
+				break;
+			default:
+				break;
+			}
+		}
+
+	}
+
+}

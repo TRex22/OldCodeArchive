@@ -1,0 +1,19 @@
+package myBank;
+
+public class BankAccount {
+	private String owner;
+	private String accCode;
+	private String IDNo;
+	private double balance;
+	
+	public BankAccount (String o, String aC, String IDN, double ba)
+	{
+		owner = o;
+		accCode = aC;
+		IDNo = IDN;
+		balance = ba;
+		
+	}
+	
+	
+}

@@ -1,0 +1,23 @@
+package myUsernameGenerator;
+
+import javax.swing.JOptionPane;
+
+public class main {
+
+	/**
+	 *
+	 */
+	public static void main(String[] args) {
+
+		UsernameGenerator UsrGen = new UsernameGenerator();
+		String name = JOptionPane.showInputDialog("Enter your name");
+		String surname = JOptionPane.showInputDialog("Enter your surname");
+
+
+
+
+
+
+	}
+
+}

@@ -1,0 +1,10 @@
+cls
+c:\
+md c:\wordies\temp
+cd wordies
+move wordiesn*.* c:\wordies\temp
+move wordies*.* c:\wordies\temp
+move gon.bat c:\wordies\temp
+move goc.bat c:\wordies\temp
+rename gow.bat go.bat
+Rem Please type go in the \wordies directory to run Wordies

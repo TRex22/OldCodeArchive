@@ -1,0 +1,26 @@
+function pass : string;
+
+
+var pass : string;
+    begin
+     clrscr;
+     writeln( 'Password:' );
+     read(pass);
+
+                if (pass = 'KRONE' ) then
+
+                   begin
+                   clrscr;
+                   writeln ( 'Access Granted' );
+                   readln
+                   end
+                   else
+                   begin
+                   writeln ( 'Access Denied' );
+                   readln;
+
+                   end;
+
+
+
+end;

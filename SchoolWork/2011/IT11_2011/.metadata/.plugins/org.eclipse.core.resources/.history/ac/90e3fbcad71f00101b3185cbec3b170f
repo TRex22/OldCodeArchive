@@ -1,0 +1,21 @@
+package myLine;
+
+public class UseLine {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//exec class
+		//extaciate
+		Line eat = new Line();
+		Line bug = new Line();
+
+
+
+
+
+
+	}
+
+}

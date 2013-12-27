@@ -1,0 +1,140 @@
+package myClothes;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class ClothesArray {
+	private Clothes[] arr = new Clothes[50];
+	private int size;
+	public ClothesArray()
+	{
+		size = 0;
+		try {
+			Scanner scFile = new Scanner (new File("Clothes.txt"));
+			while (scFile.hasNext())
+			{
+				//OR
+				//String descr = scFile.nextLine();
+				//arr[size]= new Clothes (desc);
+				//size++;
+				arr[size]= new Clothes (scFile.nextLine());
+				size++;
+			}
+			
+			
+			scFile.close();
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+	}
+	public String display ()
+	{
+		String out ="";
+		for (int i = 0;i<size;i++)//size one time too many 20 is in pos i9
+		{
+			out +=(i+1)+" "+arr[i].getDesc()+"\n";
+		}
+		return out;
+	}
+	public void sortAlpha ()
+	{
+		for (int loop1 =0;loop1<size-1;loop1++)
+			for (int loop2 = loop1+1;loop2<size;loop2++)
+			{
+				if (arr[loop1].getDesc().compareToIgnoreCase(arr[loop2].getDesc())>0)
+				{
+					Clothes temp = arr[loop1];
+					arr[loop1]=arr[loop2];
+					arr[loop2]=temp;
+					
+				}
+			}
+	}
+	public void sortBravo ()
+	{
+		for (int loop1 =0;loop1<size-1;loop1++)
+			for (int loop2 = loop1+1;loop2<size;loop2++)
+			{
+				if (arr[loop1].getDesc().length()>arr[loop2].getDesc().length())
+				{
+					Clothes temp = arr[loop1];
+					arr[loop1]=arr[loop2];
+					arr[loop2]=temp;
+					
+				}
+			}
+	}
+	public String searchCharlie (String garment)
+	{
+		String message = "";
+		for (int i=0; i<size;i++)
+		{
+			if (arr[i].getDesc().contains(garment))
+			message +=arr[i].getDesc()+"\n";
+		}
+		if (message.equals(""))
+		{
+			message=garment + " not found";
+		}
+		return message;
+	}
+	public String countEcho (String garment)
+	{
+		String message = "";
+		int app=0;
+		for (int i=0; i<size;i++)
+		{
+			if (arr[i].getDesc().contains(garment))
+			app++;
+		}
+		if (app==0)
+		{
+			message=garment + " not found";
+		}
+		else
+		{
+		}
+		return message;
+	}
+	
+	public void removeFoxtrot ()
+	{
+		Clothes [] tempArr = new Clothes [50];
+		int tempSize = 0;
+		for (int loop1=0; loop1<size-1; loop1++)
+		{
+			boolean duplicate = false;
+			for (int loop2=loop1+1; loop2<size;loop2++)
+			{
+				if(arr[loop1].getDesc().equalsIgnoreCase(arr[loop2].getDesc()))
+				{
+					duplicate = true;
+				}
+			}
+			if (duplicate == false)
+			{
+				tempArr[loop1]=arr[loop1];
+				tempSize++;
+			}
+		
+		}
+		arr=tempArr;
+		size = tempSize;
+	}
+	
+	public String deleteGolf (int position)
+		{
+			if(position >=0 && position<size)
+			{
+				return "garment was eradicated.";
+			}
+			else
+			{
+				return "position invalid";
+			}
+		}
+	
+	
+}

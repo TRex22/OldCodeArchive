@@ -1,0 +1,464 @@
+package myGame;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+
+import javax.swing.*;
+import javax.swing.border.BevelBorder;
+
+
+/**
+ * This code was edited or generated using CloudGarden's Jigloo
+ * SWT/Swing GUI Builder, which is free for non-commercial
+ * use. If Jigloo is being used commercially (ie, by a corporation,
+ * company or business for any purpose whatever) then you
+ * should purchase a license for each developer using Jigloo.
+ * Please visit www.cloudgarden.com for details.
+ * Use of Jigloo implies acceptance of these licensing terms.
+ * A COMMERCIAL LICENSE HAS NOT BEEN PURCHASED FOR
+ * THIS MACHINE, SO JIGLOO OR THIS CODE CANNOT BE USED
+ * LEGALLY FOR ANY CORPORATE OR COMMERCIAL PURPOSE.
+ */
+public class Game extends javax.swing.JFrame {
+	//gui
+	private JMenuBar MnuBar;
+	private JMenu jMenu1;
+	private JPanel PNLScore;
+	private JLabel lblPlayer1;
+	private JLabel lblPlayer2;
+	private JLabel lblPlayer2Score;
+	private JMenuItem MnuAbout;
+	private JMenuItem Exit;
+	private JLabel explosion;
+	private JLabel alien1;
+	private JLabel bullet2;
+	private JLabel bullet1;
+	private JLabel lblPlayer;
+	private JLabel lblPlayerScore;
+	private JPanel PNLGame;
+	private JSeparator Seperator;
+	private JMenuItem MnuNew;
+	//variables
+	private int Player1Score = 0;
+	private int Player2Score = 0;
+	private int X = 235;
+	private int Y = 309;
+	private String direction1 = "";
+	private int bullet1x=512;
+	private int bullet1y=512;
+	private String direction2 = "";
+	private int bullet2x=512;
+	private int bullet2y=512;
+	private int alien1x=0;
+	private int alien1y=45;
+	private int explodex=0;
+	private int explodey=0;
+	private boolean hit = false;
+	Action animation = new AbstractAction()
+	{
+		private static final long serialVersionUID = 1L;
+		public void actionPerformed(ActionEvent e)
+		{
+			if (lblPlayer.getBounds().intersects(alien1.getBounds()))
+			{
+				explosion.setBounds(alien1x,alien1y,explosion.getWidth(),explosion.getHeight());
+				alien1.setVisible(false);
+				lblPlayer.setVisible(false);
+				explosion.setVisible(true);
+				alien1x=0;
+				alien1.setBounds(alien1x, alien1y, alien1.getWidth(), alien1.getHeight());
+				X = 235;
+				Y = 309;
+				lblPlayer.setBounds(X, Y, 80, 53);
+				lblPlayer.setVisible(true);
+				//alien1y=0;
+				Player2Score = Player2Score+1;
+				lblPlayer2Score.setText(""+Player2Score);
+				//explosion.setVisible(false);
+			}
+			if (bullet1.getBounds().intersects(alien1.getBounds()))
+			{
+				bullet1.setVisible(false);
+				direction1="";
+				alien1.setVisible(false);
+				bullet1x=571;
+				bullet1y=571;
+				explosion.setBounds(alien1x,alien1y,explosion.getWidth(),explosion.getHeight());
+				explosion.setVisible(true);
+				hit=true;
+				//Thread.currentThread();
+
+				//try {
+				//Thread.sleep(250);
+				//} catch (InterruptedException e1) {
+					// TODO Auto-generated catch block
+					//e1.printStackTrace();
+				//}
+				explosion.setVisible(false);
+				bullet1.setBounds(bullet1x, bullet1y, bullet1.getWidth(), bullet1.getHeight());
+				alien1x=0;
+				alien1y=45;
+				alien1.setBounds(alien1x, alien1y, alien1.getWidth(), alien1.getHeight());
+				Player1Score = Player1Score+5;
+				lblPlayerScore.setText(""+Player1Score);
+
+
+			}
+			if(bullet1y>0)
+			{
+				bullet1y=bullet1y-10;
+				bullet1.setBounds(bullet1x, bullet1y,bullet1.getWidth(),bullet1.getHeight());
+
+			}
+			else
+			{
+				bullet1.setVisible(false);
+				direction1="";
+				//Player2Score = Player2Score+5;
+				//lblPlayer2Score.setText(""+Player2Score);
+			}
+
+
+
+
+
+			if(direction2.equals("up"))
+			{
+				if (bullet2.getBounds().intersects(alien1.getBounds()))
+				{
+					bullet2.setVisible(false);
+					direction2="";
+					alien1.setVisible(false);
+
+					explosion.setBounds(alien1x,alien1y,explosion.getWidth(),explosion.getHeight());
+					explosion.setVisible(true);
+					//times.setDelay(150);
+					hit=true;
+					bullet2x=571;
+					bullet2y=571;
+					bullet2.setBounds(bullet2x, bullet2y, bullet2.getWidth(), bullet2.getHeight());
+					Player1Score = Player1Score+5;
+					lblPlayerScore.setText(""+Player1Score);
+					alien1x=0;
+					alien1y=45;
+					alien1.setBounds(alien1x, alien1y, alien1.getWidth(), alien1.getHeight());
+				}
+
+				if (bullet2y>0)
+				{
+					bullet2y=bullet2y-10;
+					bullet2.setBounds(bullet2x, bullet2y, bullet2.getWidth(),bullet2.getHeight());
+
+				}
+				else
+				{
+					bullet2.setVisible(false);
+					direction2="";
+					//Player2Score=Player2Score+1;
+					//lblPlayer2Score.setText(""+Player2Score);
+				}
+
+			}
+
+			if(alien1x==0)
+			{
+				alien1.setVisible(true);
+				alien1x=alien1x+10;
+			}
+			else if (alien1x>=590)
+			{
+				alien1.setVisible(false);
+				alien1x=0;
+			}
+			else
+			{
+				alien1.setBounds(alien1x,alien1y,alien1.getWidth(),alien1.getHeight());
+				alien1x=alien1x+10;
+			}
+
+
+		}
+		};
+	private Timer times = new Timer(250,animation);
+
+	/**
+	 * Auto-generated main method to display this JFrame
+	 */
+	public static void main(String[] args) {
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				Game inst = new Game();
+				inst.setLocationRelativeTo(null);
+				inst.setVisible(true);
+			}
+		});
+	}
+
+	public Game() {
+		super();
+		initGUI();
+	}
+
+	private void initGUI() {
+		try {
+			this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+			this.setTitle("My Game");
+			this.setIconImage(new ImageIcon(getClass().getClassLoader().getResource("images/587778.jpg")).getImage());
+			Runtime.getRuntime().gc();
+			times.start();
+
+			this.addKeyListener((new java.awt.event.KeyAdapter()
+			{
+
+				public void keyPressed (java.awt.event.KeyEvent keyboard)
+				{
+
+					int key = keyboard.getKeyCode();
+					//if-statements to determine x and y co-ordinates of move
+					if (Character.toUpperCase(keyboard.getKeyChar())== 'S'&& Y < 305)
+					{
+						//move Down when s is pressed
+						Y=Y+40;
+					}
+					if (key==KeyEvent.VK_DOWN && Y < 305)
+					{
+						//move Down when s is pressed
+						Y=Y+40;
+					}
+					if (Character.toUpperCase(keyboard.getKeyChar())== 'W'&& Y > 40)
+					{
+						//move UP when s is pressed
+						Y=Y-40;
+					}
+					if (key==KeyEvent.VK_UP && Y > 40)
+					{
+						//move UP when s is pressed
+						Y=Y-40;
+					}
+					if (Character.toUpperCase(keyboard.getKeyChar())== 'D'&& X < 590)
+					{
+						//move Right when s is pressed
+						X=X+40;
+					}
+					if (key==KeyEvent.VK_RIGHT&& X < 590)
+					{
+						//move Right when s is pressed
+						X=X+40;
+					}
+					if (Character.toUpperCase(keyboard.getKeyChar())== 'A'&& X > 40)
+					{
+						//move Left when s is pressed
+						X=X-40;
+					}
+					if (key==KeyEvent.VK_LEFT&& X > 40)
+					{
+						//move Left when s is pressed
+						X=X-40;
+					}
+					//Move player
+					lblPlayer.setBounds(X, Y, lblPlayer.getWidth(),lblPlayer.getHeight());
+
+
+
+					if(key==KeyEvent.VK_SPACE && Y >40)
+					{
+						//shoot up
+						if (direction1.equals(""))
+						{
+							bullet1.setVisible(true);
+							direction1="up";
+							bullet1x=X+40;
+							bullet1y=Y-15;
+							bullet1.setBounds(bullet1x, bullet1y, bullet1.getWidth(),bullet1.getHeight());
+
+
+						}
+						else if (direction2.equals(""))
+						{
+							bullet2.setVisible(true);
+							direction2="up";
+							bullet2x=X+40;
+							bullet2y=Y-15;
+							bullet2.setBounds(bullet2x, bullet2y, bullet2.getWidth(),bullet2.getHeight());
+						}
+					}}}));
+
+			//EDITED CODE
+
+
+
+			getContentPane().setLayout(null);
+			this.setAlwaysOnTop(true);
+			{
+				Seperator = new JSeparator();
+				getContentPane().add(Seperator);
+				Seperator.setBounds(0, 401, 699, 10);
+			}
+			{
+				PNLGame = new JPanel();
+				getContentPane().add(PNLGame);
+				PNLGame.setBounds(0, 0, 690, 395);
+				PNLGame.setLayout(null);
+				PNLGame.setBorder(BorderFactory.createEtchedBorder(BevelBorder.LOWERED));
+				PNLGame.setBackground(new java.awt.Color(0,128,192));
+				{
+
+					lblPlayer = new JLabel();
+					PNLGame.add(lblPlayer);
+					lblPlayer.setIcon(new ImageIcon(getClass().getClassLoader().getResource("images/DUKE.png")));
+					lblPlayer.setBounds(X, Y, 80, 53);
+				}
+				{
+					bullet1 = new JLabel();
+					PNLGame.add(bullet1);
+					bullet1.setIcon(new ImageIcon(getClass().getClassLoader().getResource("images/bulletUP.png")));
+					bullet1.setBounds(172, 169, 21, 21);
+					bullet1.setVisible(false);
+				}
+				{
+					bullet2 = new JLabel();
+					PNLGame.add(bullet2);
+					bullet2.setIcon(new ImageIcon(getClass().getClassLoader().getResource("images/bulletUP.png")));
+					bullet2.setBounds(213, 14, 20, 23);
+					bullet2.setVisible(false);
+				}
+				{
+					alien1 = new JLabel();
+					PNLGame.add(alien1);
+					alien1.setIcon(new ImageIcon(getClass().getClassLoader().getResource("images/enemey.png")));
+					alien1.setBounds(365, 10, 136, 156);
+					alien1.setVisible(false);
+				}
+				{
+					explosion = new JLabel();
+					PNLGame.add(explosion);
+					explosion.setIcon(new ImageIcon(getClass().getClassLoader().getResource("images/Explosion.GIF")));
+					explosion.setBounds(404, 55, 111, 126);
+					explosion.setVisible(false);
+				}
+
+
+			}
+
+			{
+				PNLScore = new JPanel();
+				getContentPane().add(PNLScore);
+				PNLScore.setBounds(10, 414, 638, 37);
+				PNLScore.setLayout(null);
+				{
+					lblPlayer1 = new JLabel();
+					PNLScore.add(lblPlayer1);
+					lblPlayer1.setText("Player 1:");
+					lblPlayer1.setBounds(12, 12, 50, 15);
+				}
+				{
+					lblPlayerScore = new JLabel();
+					PNLScore.add(lblPlayerScore);
+					lblPlayerScore.setText("0");
+					lblPlayerScore.setBounds(68, 11, 71, 16);
+				}
+				{
+					lblPlayer2 = new JLabel();
+					PNLScore.add(lblPlayer2);
+					lblPlayer2.setText("Number of Deaths: ");
+					lblPlayer2.setBounds(145, 11, 110, 16);
+				}
+				{
+					lblPlayer2Score = new JLabel();
+					PNLScore.add(lblPlayer2Score);
+					lblPlayer2Score.setText("0");
+					lblPlayer2Score.setBounds(253, 12, 105, 16);
+				}
+			}
+			{
+				MnuBar = new JMenuBar();
+				setJMenuBar(MnuBar);
+				{
+					jMenu1 = new JMenu();
+					MnuBar.add(jMenu1);
+					jMenu1.setText("File");
+					{
+
+
+					{
+						MnuNew = new JMenuItem();
+						jMenu1.add(MnuNew);
+						MnuNew.setText("New");
+						MnuNew.setAccelerator(KeyStroke.getKeyStroke("ctrl N"));
+						MnuNew.addActionListener(new ActionListener() {
+							public void actionPerformed(ActionEvent evt) {
+								Player1Score = 0;
+								lblPlayerScore.setText(""+Player1Score);
+								Player2Score = 0;
+								lblPlayer2Score.setText(""+Player2Score);
+								times.stop();
+								times.start();
+								alien1x=0;
+								alien1y=45;
+								alien1.setBounds(alien1x, alien1y, alien1.getWidth(), alien1.getHeight());
+								explosion.setVisible(false);
+
+
+							}
+						});
+					}
+					{
+						MnuAbout = new JMenuItem();
+						jMenu1.add(MnuAbout);
+						MnuAbout.setText("About");
+						MnuAbout.setAccelerator(KeyStroke.getKeyStroke("ctrl A"));
+						MnuAbout.addActionListener(new ActionListener() {
+							public void actionPerformed(ActionEvent evt) {
+								JOptionPane.showMessageDialog(null, "Shoot by Jason Chalom"+"" +
+										"\nCopyright 2010\nSupport: www.schoolyardstudios.webs.com");
+							}
+						});
+
+					}
+					{
+					Exit = new JMenuItem();
+					jMenu1.add(Exit);
+					Exit.setText("Exit");
+					Exit.setAccelerator(KeyStroke.getKeyStroke("ctrl E"));
+					Exit.addActionListener(new ActionListener() {
+						public void actionPerformed(ActionEvent evt) {
+							System.exit(0);
+						}
+
+
+					});
+				}}
+			}
+			pack();
+			this.setSize(700, 511);
+			}} catch (Exception e) {
+
+					e.printStackTrace();
+					JOptionPane.showMessageDialog(null, "Error Occured");
+
+
+				}}
+
+
+
+
+			//Timed animation
+			//Action expla = new AbstractAction()
+			//{
+
+			//private static final long serialVersionUID = 1L;
+			//public void actionPerformed(ActionEvent e)
+			//{
+
+			//	int i = 0;
+			//	i++;
+			//	explosion.setVisible(true);
+			//	explosion.setBounds(alien1x,alien1y,alien1.getWidth(),alien1.getHeight());
+			//	do{
+			//		expl.stop();
+			//	}while(i!=5);
+			//}
+			//};
+
+		}

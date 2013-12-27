@@ -1,0 +1,17 @@
+Function deleteme : string;
+
+var stg : string;
+    lt : string;
+begin
+
+writeln( '12 letter word or sentence' );
+read(lt);
+stg := lt;
+delete (stg, 2, 6);
+writeln (stg);
+delete (stg, 5 , 3);
+writeln (stg);
+delete (stg, 3, 1);
+writeln (stg);
+readln;
+end;

@@ -1,0 +1,21 @@
+package myMakeLabels;
+
+public class MakeLabels {
+
+	/**
+	 * IT10 2010 21 Jan 2010 Jason Chalom Page 33 Activity 1
+	 */
+	public static void main(String[] args) {
+		System.out.println( "***********************" );
+		System.out.println( "*    Jason Chalom     *" );
+		System.out.println( "*         IT          *" );
+		System.out.println( "***********************" );
+		
+	
+	
+	
+	
+	
+	}
+
+}

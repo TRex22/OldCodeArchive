@@ -1,0 +1,10 @@
+001#Chalom#Jason#11S#78#87#87#45#76#89
+002#Rosenfeld#Ariel#11P#72#67#89#56#78#67
+003#Weisman#Shane#11P#66#56#56#87#89#90
+004#Jankelow#Daniel#11Q#67#56#87#98#65#78
+005#Shneor#Amir#11M#50#5#78#90#99#86
+006#Zlotnik#Ashley#11N#63#56#87#87#75#76
+007#Levin#Jonathan#11S#67#67#98#67#67#98
+008#Ruso#Eitan#11S#59#67#89#90#87#67
+009#Brown#Joshua#11P#73#89#78#67#87#78
+010#Pockroy#Shane#11M#83#89#67#67#89#67

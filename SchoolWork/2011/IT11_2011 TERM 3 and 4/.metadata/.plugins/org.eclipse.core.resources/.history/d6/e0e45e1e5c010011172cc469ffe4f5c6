@@ -1,0 +1,19 @@
+package myArrayTechniques;
+
+public class ArrayTechniques {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//Menu with choices
+		//input into array
+		
+		//declare array and counter
+		int [] arr = new int [50];
+		int size =0 ;
+		//input text files into array
+
+	}
+
+}

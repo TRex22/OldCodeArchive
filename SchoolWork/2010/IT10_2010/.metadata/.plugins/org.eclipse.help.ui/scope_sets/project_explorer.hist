@@ -1,0 +1,6 @@
+#Sat Feb 27 12:32:30 CAT 2010
+__DEFAULT__=false
+org.eclipse.sdk.Eclipse.master=true
+org.eclipse.sdk.Google.master=true
+org.eclipse.help.ui.localSearch.master=true
+expression=project explorer

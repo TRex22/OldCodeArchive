@@ -1,0 +1,22 @@
+package myPrisoner;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class MainPrisoner {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		try {
+			Scanner scFile = new Scanner (new File("prisoners.txt"));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

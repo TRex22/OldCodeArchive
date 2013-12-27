@@ -1,0 +1,126 @@
+function begi : string;
+
+     begin
+     gotoxy(26,11);
+     write( 'Eatmer Copyright Jason Chalom' );
+
+end;
+
+function burns : string;
+
+         begin
+         gotoxy(24,9);
+         write( '*                               *' );
+         gotoxy(24,10);
+         write( '*                               *' );
+         gotoxy(24,12);
+         write( '*                               *' );
+         gotoxy(24,13);
+         write( '*                               *' );
+end;
+
+function sides1 : string;
+
+         begin
+         gotoxy(24,8);
+         write( '*********************************' );
+
+end;
+
+function sides2 : string;
+
+         begin
+
+         gotoxy(24,14);
+         write( '*********************************' );
+end;
+
+function sou : string;
+
+         begin
+         sound(900);
+         delay(200);
+         sound(100);
+         delay(200);
+         sound(900);
+         delay(200);
+         sound(100);
+         delay(200);
+         sound(500);
+         delay(400);
+         sound(600);
+         delay(200);
+         sound(650);
+         delay(100);
+         sound(750);
+         delay(250);
+         sound(850);
+         delay(200);
+         sound(900);
+         delay(200);
+         sound(100);
+         delay(200);
+         sound(900);
+         delay(200);
+         sound(100);
+         delay(350);
+         nosound;
+
+end;
+
+function dosver : string;
+
+var
+ver : word;
+begin
+  Ver := DosVersion;
+  Writeln('This is DOS version ', Lo(Ver), '.',
+Hi(Ver));
+end;
+
+ Function Timer : string;
+
+  var
+   f: text;
+   h, m, s, hund : Word; { For GetTime}
+   ftime : Longint; { For Get/SetFTime}
+   dt : DateTime; { For Pack/UnpackTime }
+                  { For WinDos use TDateTime }
+ function LeadingZero(w : Word) : String;
+ var
+   s : String;
+ begin
+      Str(w:0,s);
+   if Length(s) = 1 then
+     s := '0' + s;
+   LeadingZero := s;
+ end;
+ begin
+   Assign(f, 'TEST.TXT');
+   GetTime(h,m,s,hund);
+
+   Rewrite(f); { Create new file }
+   GetFTime(f,ftime); { Get creation time }
+   Writeln('File created at ',LeadingZero(h),
+           ':',LeadingZero(m),':',
+           LeadingZero(s));
+   UnpackTime(ftime,dt);
+   with dt do
+     begin
+       clrscr;
+       Writeln('The time is: ',
+               LeadingZero(hour),':',
+               LeadingZero(min),':',
+               LeadingZero(sec));
+       hour := 0;
+       min := 1;
+       sec := 0;
+       PackTime(dt,ftime);
+
+       Reset(f); { Reopen file for reading }
+       { (Otherwise, close will update time) }
+       SetFTime(f,ftime);
+     end;
+   Close(f);   { Close file }
+ end;
+

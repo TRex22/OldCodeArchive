@@ -1,0 +1,44 @@
+package myLearner;
+
+public class Learner {
+//1 makee fields
+	//-sign means private
+	
+	private String fullname;
+	private int term1;
+	private int term2;
+	private int term3;
+	//3 make ur constructor
+		//+ means public
+	//public nameofclass (parm)
+	//param (what you recieve) = one for each field
+	public Learner()
+	//2 make ur setters and getters (mutator methods) and getter (accessor methods)
+	public String getFullname() {
+		return fullname;
+	}
+	public void setFullname(String fullname) {
+		this.fullname = fullname;
+	}
+	public int getTerm1() {
+		return term1;
+	}
+	public void setTerm1(int term1) {
+		this.term1 = term1;
+	}
+	public int getTerm3() {
+		return term3;
+	}
+	public void setTerm3(int term3) {
+		this.term3 = term3;
+	}
+	public int getTerm2() {
+		return term2;
+	}
+	public void setTerm2(int term2) {
+		this.term2 = term2;
+	}
+	
+	
+	
+}

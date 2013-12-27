@@ -1,0 +1,29 @@
+package myQ4;
+
+import javax.swing.JOptionPane;
+
+public class JustifyTXT {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		//input
+		
+		int width = Integer.parseInt(JOptionPane.showInputDialog("Width?"));
+		String text = "A great discovery solves a great problem but there is a grain of discovery in the solution of any problem";
+		
+		//Take pos of text to be width for first line
+		//count white space
+		//each word must have a space on both sides except the first word ie from wht spc 1
+		//at end of line remove white space start new line and continue to the end of the text
+		
+		
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package myPerson;
+
+public class Person {
+//fields = properties/attributes
+	//=global variables
+	//=instance variables
+
+// Access modifiers 
+	//(-) [signs given in exams] private
+	//(+)public = accesiable in any class
+	//(#) protected = accessible in any class in the same package
+	
+
+}

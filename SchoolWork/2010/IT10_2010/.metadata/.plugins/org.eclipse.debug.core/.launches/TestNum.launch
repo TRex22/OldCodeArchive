@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Page 124 Exercise 1 number 6/myTestNum/TestNum.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="myTestNum.TestNum"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Page 124 Exercise 1 number 6"/>
+</launchConfiguration>

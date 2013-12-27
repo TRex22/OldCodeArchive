@@ -1,0 +1,26 @@
+package myRevisionStrings;
+
+import javax.swing.JOptionPane;
+
+public class RevisionStrings {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String sentence = JOptionPane.showInputDialog("Enetr a darn sentence");
+		char menu = ' ';
+		do{
+		menu = JOptionPane.showInputDialog( "1)First Letter capital letter \n2) First letter capital letters, other small letters\n3)Count the words\4)Count letters\n5)Count digits\n6)remove Digits\n7) Count a letter\n8)Backwards\n0) exit").toUpperCase().charAt(0);
+
+
+
+
+		}while(menu != '0');
+
+
+
+
+	}
+
+}

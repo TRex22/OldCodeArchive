@@ -1,0 +1,22 @@
+package myQ3;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Employee empl = new Employee();
+
+		String name = JOptionPane.showInputDialog("Enter Name of employee");
+		int hWorked = Integer.parseInt(JOptionPane.showInputDialog("Enter the amount of hours worked"));
+		double hSalary = Double.parseDouble(JOptionPane.showInputDialog("Enter the hourly salary"));
+
+		empl.sethSalary(hSalary);
+		empl.sethWork(hWorked);
+
+	}
+
+}

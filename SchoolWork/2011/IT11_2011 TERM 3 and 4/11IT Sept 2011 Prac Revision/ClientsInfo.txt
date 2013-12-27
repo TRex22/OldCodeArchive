@@ -1,0 +1,6 @@
+Ben Botha#3#paid/account
+John Smith#15#paid
+Gerty Smith#1#account
+Mohammed Carrim#20#paid
+Fatima Cassim#5#account
+Cecilia Mpela#12#paid

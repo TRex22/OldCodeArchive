@@ -1,0 +1,47 @@
+package myGameScore;
+
+import javax.swing.JOptionPane;
+
+public class GameApp {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		arrHeroes myHeroes = new arrHeroes();
+		char choice = ' ';
+		
+		while (choice != 'Q')
+		{
+			choice = JOptionPane.showInputDialog("Enter Choice:\n\n" +
+					"a: Display all heroes\n" +
+					"b: Display heroes with higher scores than me\n" +
+					"c: Display heroes details\n" +
+					"d: Add hero\n" +
+					"e: Display all party names\n" +
+					"f: Change a player's score\n" +
+					"q: quit").toUpperCase().charAt(0);
+			switch (choice)
+			{
+			case 'A':
+				break;
+			case 'B':
+				break;
+			case 'C':
+				break;
+			case 'D':
+				break;
+			case 'E':
+				break;
+			case 'F':
+				break;
+			case 'Q':
+				break;
+			default:
+				break;
+			}
+		}
+
+	}
+
+}

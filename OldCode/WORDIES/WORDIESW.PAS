@@ -1,0 +1,86 @@
+Program letters;
+
+uses wincrt, windos;
+
+{$I a:\wordies\wordsw.jay}
+
+
+var eat : string;
+
+begin
+     repeat
+     clrscr;
+     write( '                             WORDIES COPYRIGHT JASON CHALOM' );
+     writeln;
+     writeln;
+     writeln( '1. copy the words' );
+     writeln( '2. delete the words' );
+     writeln( '3. change the words to numbers' );
+     writeln( '4. Lets see if your code has and I or an O' );
+     writeln( '5. Ramdom numbers that will look like the Matrix' );
+     writeln( '6. what dos ver do you have' );
+     Writeln( '7. Time + Date' );
+     writeln( 'q. exit' );
+     writeln;
+     read(eat);
+
+
+if (eat = '1' ) then
+   begin
+   clrscr;
+   readln;
+   copyme;
+   readln;
+end;
+
+if (eat = '2' ) then
+   begin
+   clrscr;
+   readln;
+   deleteme;
+   readln;
+end;
+
+if (eat = '3' ) then
+   begin
+   clrscr;
+   readln;
+   change_2_num;
+   readln;
+end;
+
+if (eat = '4' ) then
+   begin
+   clrscr;
+   readln;
+   invalid_characters;
+   readln;
+   end;
+
+if (eat= '7' ) then
+   begin
+   clrscr;
+   readln;
+   timer;
+   dater;
+   readln;
+   end;
+
+if (eat = '5' ) then
+   begin
+   clrscr;
+   readln;
+   ram;
+   readln;
+   end;
+
+if (eat = '6' ) then
+   begin
+   clrscr;
+   readln;
+   dosver;
+   readln;
+   end;
+
+until (eat = 'q' );
+end.

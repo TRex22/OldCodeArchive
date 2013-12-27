@@ -1,0 +1,5 @@
+Creating elements for Game.java
+
+
+>>>  about to create class javax.swing.JFrame, constructor=public javax.swing.JFrame() throws java.awt.HeadlessException
+<<< created class javax.swing.JFrame

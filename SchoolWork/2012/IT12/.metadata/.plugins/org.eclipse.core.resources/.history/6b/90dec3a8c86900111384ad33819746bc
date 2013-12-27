@@ -1,0 +1,17 @@
+package mySquare;
+
+public class MainSquare {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int width = (int) (Math.random()*80+1);
+		//instanciate an object
+		Square square = new Square (width);
+		//disp
+		System.out.println(square.toString());
+
+	}
+
+}

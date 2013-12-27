@@ -1,0 +1,45 @@
+package myFF;
+
+import javax.swing.JOptionPane;
+
+public class MealMain {
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		MealArr MA = new MealArr();
+		char choice  = ' ';
+		
+		while (choice != 'Q')
+		{
+			choice = JOptionPane.showInputDialog("MENU\nA - Daily Report\nB - Meals Without Fats\nC - Best And Worst Meals\n\nQ - Quit\n\nYour choice?").toUpperCase().charAt(0);
+			switch (choice)
+			{
+				case 'A'://Daily Report
+					String day = JOptionPane.showInputDialog("Enter 3 letters of day");
+					System.out.println(MA.optionA(day));
+					break;
+				case 'B':
+					System.out.println(MA.OptionB());
+					break;
+				case 'C':
+					System.out.println(MA.OptionC());
+					break;
+				case 'Q':
+					JOptionPane.showMessageDialog(null, "BYE BYE");
+					break;
+				case 'T': 
+					System.out.println("TEsta: "MA.testClass());
+					break;
+				default:
+					JOptionPane.showMessageDialog(null, "ERROR WRONG INPUT");
+					break;
+			}
+			
+			
+			
+		}
+
+	}
+
+}

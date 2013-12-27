@@ -1,0 +1,28 @@
+package main;
+
+import javax.swing.*;
+
+public class MemCheck {
+
+	/**
+	 * 
+	 */
+	public static void main(String[] args) {
+		JFrame frame = new JFrame();
+		JTextArea txt = new JTextArea();
+		JButton button = new JButton();
+		
+		frame.setVisible(true);
+		frame.add(txt);
+		frame.add(button);
+		frame.setSize(400,400);
+		button.setSize(50,50);
+		
+		
+		
+		
+		
+
+	}
+
+}

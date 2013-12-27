@@ -1,0 +1,12 @@
+package myXYZTrading;
+
+public class Employee {
+	private String firstName;
+	private String surname;
+	private String dob;//ccyymmdd
+	private Double salary;
+	private int dependent;
+	private char medAid;
+	
+	public Employee ()
+}

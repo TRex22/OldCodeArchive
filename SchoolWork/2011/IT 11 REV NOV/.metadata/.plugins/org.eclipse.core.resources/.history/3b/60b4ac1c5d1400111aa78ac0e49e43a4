@@ -1,0 +1,13 @@
+package myQ3;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Employee empl = new Employee();
+
+	}
+
+}

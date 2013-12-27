@@ -1,0 +1,76 @@
+package myNumChars;
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
+
+public class NumChars {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		try {
+			int size, mid;
+			//ask for sentence
+			String wrd = JOptionPane.showInputDialog( "Type any Word <Enter>" );
+			//determine how many chars in sentence
+			size = wrd.length();
+			//determine if the sentence has odd num of chars
+				//if it does - dsp middle char
+				//if it is not dsp a message
+			if (size%2 != 0)
+			{
+			mid = size / 2 +1;
+			//Import a frame
+			JFrame nameofframe = new JFrame();
+
+			//make visiable
+			nameofframe.setVisible(true);
+			nameofframe.setLocation(40,20);
+			nameofframe.setSize(350,50);
+			nameofframe.setTitle( "Temperature Conversion" );
+
+			//import text area
+
+			JTextArea txt = new JTextArea();
+			nameofframe.add(txt);
+
+			//display in text area
+			//fist set text then append after
+
+			txt.setTabSize(20);
+			txt.setText( wrd+ "has odd number of letters" );
+			txt.append("\nThe Middle letter is "+wrd.charAt(mid-1));
+			}
+			else
+			{
+				//Import a frame
+				JFrame nameofframe = new JFrame();
+
+				//make visiable
+				nameofframe.setVisible(true);
+				nameofframe.setLocation(40,20);
+				nameofframe.setSize(350,50);
+				nameofframe.setTitle( "Temperature Conversion" );
+
+				//import text area
+
+				JTextArea txt = new JTextArea();
+				nameofframe.add(txt);
+
+				//display in text area
+				//fist set text then append after
+
+				txt.setTabSize(20);
+				txt.setText(wrd+ ", has an even number of letters" );
+				
+			}
+			
+			
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "WHY EVEN ASK? ERROR 1" );
+		}
+	}
+
+}

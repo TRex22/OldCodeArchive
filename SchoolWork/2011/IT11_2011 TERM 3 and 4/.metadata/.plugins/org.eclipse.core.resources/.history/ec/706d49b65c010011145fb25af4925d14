@@ -1,0 +1,40 @@
+package myArrayTechniques;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class ArrayTechniques {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//Menu with choices
+		//input into array
+
+		//declare array and counter
+		int [] arr = new int [50];
+		int size =0 ;
+		//input text files into array
+		try {
+			Scanner scFile = new Scanner(new File("numbers.txt"));
+			while (scFile.hasNext())
+			{
+				arr[size]=scFile.nextInt();
+				size++;
+			}
+
+			scFile.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//menu programming
+		char choice;
+		do{
+			choice = JO
+		}
+	}
+
+}

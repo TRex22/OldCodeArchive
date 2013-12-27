@@ -1,0 +1,71 @@
+program qjwjjksjws;
+
+uses crt, dos;
+
+var key : char;
+begin
+sound (440);
+delay (400);
+sound (440);
+delay (400);
+sound (493);
+delay (400);
+sound (440);
+delay (400);
+sound (587);
+delay (400);
+sound (555);
+delay (400);
+sound (440);
+delay (400);
+sound (440);
+delay (400);
+sound (493);
+delay (400);
+sound (440);
+delay (400);
+sound (659);
+delay (400);
+sound (587);
+delay (400);
+sound (440);
+delay (400);
+sound (440);
+delay (400);
+sound (880);
+delay (400);
+sound (740);
+delay (400);
+SOUND (587);
+delay (400);
+sound (555);
+delay (400);
+sound (493);
+delay (400);
+sound (100);
+delay (400);
+sound (600);
+delay (400);
+sound (783);
+delay (400);
+sound (783);
+delay (400);
+sound (740);
+delay (400);
+sound (587);
+delay (400);
+sound (659);
+delay (400);
+sound (587);
+delay (400);
+nosound;
+writeln ( 'hello' );
+read (key);
+sound (500);
+delay (400);
+sound (600);
+delay (400);
+nosound;
+
+
+end.

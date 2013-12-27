@@ -1,0 +1,7 @@
+#Sun Aug 22 01:01:06 CAT 2010
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.jdt.ui.presentation
+org.eclipse.jdt.ui.editors.textfont=1|Courier New|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
+eclipse.preferences.version=1
+UIActivities.org.eclipse.equinox.p2.ui.sdk.classicUpdate=true
+ENABLED_DECORATORS=org.dyno.visual.swing.decorator\:true,org.eclipse.jdt.ui.override.decorator\:true,org.eclipse.jdt.ui.interface.decorator\:false,org.eclipse.jdt.ui.buildpath.decorator\:true,org.eclipse.mylyn.context.ui.decorator.interest\:true,org.eclipse.mylyn.tasks.ui.decorators.task\:true,org.eclipse.mylyn.team.ui.changeset.decorator\:true,org.eclipse.pde.ui.binaryProjectDecorator\:false,org.eclipse.team.cvs.ui.decorator\:true,org.eclipse.ui.LinkedResourceDecorator\:true,org.eclipse.ui.ContentTypeDecorator\:true,org.tigris.subversion.subclipse.ui.decorator\:true,
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jdt.ui.editors.textfont

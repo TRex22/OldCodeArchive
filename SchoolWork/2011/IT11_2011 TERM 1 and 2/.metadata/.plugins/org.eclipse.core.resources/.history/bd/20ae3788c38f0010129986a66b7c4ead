@@ -1,0 +1,18 @@
+package myUsernameGenerator;
+
+public class UsernameGenerator {
+
+	private String name;
+	private String surname;
+
+	public UsernameGenerator (String n, String s)
+	{
+		name = n ;
+		surname = s;
+	}
+
+
+
+
+
+}

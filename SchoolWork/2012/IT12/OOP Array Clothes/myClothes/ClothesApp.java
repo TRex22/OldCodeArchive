@@ -1,0 +1,69 @@
+package myClothes;
+
+import javax.swing.JOptionPane;
+
+public class ClothesApp {
+
+	/**
+	 * 
+	 */
+	public static void main(String[] args) {
+		ClothesArray objCA = new ClothesArray();
+		char choice =' ';
+		
+		do {
+		
+		choice = JOptionPane.showInputDialog
+				("A> Display Wardrobe"+
+						"\nB> Sort Alphabetically"+
+						"\nC> Sort accroding to length of description"+
+						"\nD> Search for a garment"+
+						"\nE> Display all garments of a specific type"+
+						"\nF> Remove duplicates"+
+						"\nG> Delete a garment"+
+						"\nH> Instert a new garment\n"+
+						"\nX> Exit"
+						)
+				.toUpperCase().charAt(0);
+		
+		switch (choice){
+		case 'A':	System.out.println(objCA.display()); 
+			break;
+		case 'B': 	//call sort method	
+					objCA.sortAlpha();
+					//disp
+					JOptionPane.showMessageDialog(null, "Sorted List\n\n"+objCA.display());
+			break;
+		case 'C': objCA.sortBravo();
+		JOptionPane.showMessageDialog(null, "Sorted List acc length of description\n\n"+objCA.display());
+			break;
+		case 'D': String garment = JOptionPane.showInputDialog("Ent garment to search for");
+		JOptionPane.showMessageDialog(null, objCA.searchCharlie(garment));
+			break;
+		case 'E': garment = JOptionPane.showInputDialog("Enter a garment to count for");
+		JOptionPane.showMessageDialog(null, objCA.countEcho(garment));
+			break;
+		case 'F': objCA.removeFoxtrot();
+					JOptionPane.showMessageDialog(null, "Duplicate Removed");
+			break;
+		case 'G': int position = Integer.parseInt(JOptionPane.showInputDialog(objCA.display()+"\n\nEnter No Garment you want to delete."));
+			position = position-1;
+			JOptionPane.showMessageDialog(null, objCA.deleteGolf(position));
+		break;
+		case 'H': garment = JOptionPane.showInputDialog("Enter the garment");
+				position = Integer.parseInt(JOptionPane.showInputDialog("Enter the position to insert"));
+				position --;
+				JOptionPane.showMessageDialog(null, objCA.insertHotel(garment, position));
+				break;
+		case 'X':
+			break;
+		default:
+			break;
+		
+		
+			}
+		}while (choice !='X');
+
+	}
+
+}

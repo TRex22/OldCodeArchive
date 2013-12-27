@@ -1,0 +1,24 @@
+package myAd;
+
+public class Advertisement {
+
+	private int width;
+	private int height;
+	private String ad;
+
+	public Advertisement (int w, int h, String a)
+	{
+		width = w;
+		height = h;
+		ad = a;
+	}
+
+	public double calcSizeCost()
+	{
+		double sqcost = 0.00;
+		double sqmeter = (width*height);
+		sqcost = (sqmeter*10);
+		return sqcost;
+	}
+
+}

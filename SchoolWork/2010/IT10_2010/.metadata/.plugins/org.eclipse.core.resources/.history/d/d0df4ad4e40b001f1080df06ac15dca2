@@ -1,0 +1,25 @@
+package myCalcNumbers;
+
+import javax.swing.JOptionPane;
+
+public class Add2Numbers {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//input two numbers
+		String SNum1 = JOptionPane.showInputDialog(null, "Enter Number 1" );
+		String SNum2 = JOptionPane.showInputDialog(null, "Enter Number 2" );
+		//Add and Display
+		JOptionPane.showMessageDialog(null, "Number 1: "+SNum1+"" );
+		
+		
+		
+	
+	
+	
+	
+	}
+
+}

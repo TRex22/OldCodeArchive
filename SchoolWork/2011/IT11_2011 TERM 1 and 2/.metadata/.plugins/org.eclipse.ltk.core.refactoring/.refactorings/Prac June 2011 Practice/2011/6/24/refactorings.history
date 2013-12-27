@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;myPalindrome.Palindrome.input&apos; in &apos;myPalindrome.Palindrome&apos;&#x0D;&#x0A;- Original project: &apos;Prac June 2011 Practice&apos;&#x0D;&#x0A;- Original element: &apos;myPalindrome.Palindrome.input&apos;&#x0D;&#x0A;- Getter method name: &apos;getInput&apos;&#x0D;&#x0A;- Setter method name: &apos;setInput&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;input&apos;" flags="589830" getter="getInput" id="org.eclipse.jdt.ui.self.encapsulate" input="/&lt;myPalindrome{Palindrome.java[Palindrome^input" insertion="-1" setter="setInput" stamp="1307310479038" version="1.0" visibility="1"/>
+</session>

@@ -1,0 +1,23 @@
+package myQ4;
+
+import javax.swing.JOptionPane;
+
+public class JustifyTXT {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		//input
+		
+		int width = Integer.parseInt(JOptionPane.showInputDialog("Width?"));
+		
+		
+		
+		
+		
+
+	}
+
+}

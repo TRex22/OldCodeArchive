@@ -1,0 +1,47 @@
+package myID;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class ReadID {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		String message = "Name      MembershipNO   Date Of Birth\n";
+		try {
+			Scanner scFile = new Scanner(new File("names.txt"));
+
+			while (scFile.hasNext())
+			{
+				Scanner scLine = new Scanner(scFile.nextLine()).useDelimiter("#");
+				String Name = scLine.next();
+				String DOB = scLine.next();
+				String surname = Name.substring(2);
+				String MembershipNo = ""+surname.substring(0,3)+DOB.substring(2,4)+DOB.substring(5,6);
+				char initial = Name.charAt(0);
+				int imonth = Integer.parseInt(DOB.substring(4,6));
+				int day = Integer.parseInt(DOB.substring(6,8));
+				int year = Integer.parseInt(DOB.substring(0,4));
+
+
+
+				//	message += ""+surname+" "+initial+"      "+MembershipNo+"   "+
+				scLine.close();
+			}
+
+
+			scFile.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.err.println("Error with the text file");
+		}
+
+
+	}
+
+}

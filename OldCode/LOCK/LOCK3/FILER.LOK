@@ -1,0 +1,15 @@
+function pass : string;
+
+begin
+      writeln;
+      writeln ( 'Password:' );
+end;
+
+
+
+function by : string;
+
+      begin
+      writeln( 'Bypassed Password' );
+end;
+

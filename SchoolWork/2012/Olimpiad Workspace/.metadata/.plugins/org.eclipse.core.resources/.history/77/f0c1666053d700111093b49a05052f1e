@@ -1,0 +1,23 @@
+package Problem1;
+
+import javax.swing.JOptionPane;
+
+public class main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//square or rectangle
+		//calc area
+		
+		String dimensions = JOptionPane.showInputDialog("Enter length and breadth");
+		String length = ""+dimensions.charAt(0);
+		String breadth = ""+dimensions.substring(3,4);
+		
+		System.out.println("hello "+breadth);
+		
+		
+	}
+
+}

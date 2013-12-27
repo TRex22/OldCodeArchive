@@ -1,0 +1,51 @@
+package myClients;
+
+public class Client {
+	private int clientID;
+	private String name;
+	private double hoursUsed;
+	
+	public Client ()
+	{
+		setClientID(0);
+		setName("");
+		setHoursUsed(0.00);
+	}
+
+	public int getClientID() {
+		return clientID;
+	}
+
+	public void setClientID(int clientID) {
+		this.clientID = clientID;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getHoursUsed() {
+		return hoursUsed;
+	}
+
+	public void setHoursUsed(double hoursUsed) {
+		this.hoursUsed = hoursUsed;
+	}
+	
+	public int getHours()
+	{
+		return (int)hoursUsed;
+	}
+	
+	public int getMinutes()
+	{
+		double temp = hoursUsed-getHours();
+		temp = temp*60;
+		return (int)temp;
+	}
+	
+}

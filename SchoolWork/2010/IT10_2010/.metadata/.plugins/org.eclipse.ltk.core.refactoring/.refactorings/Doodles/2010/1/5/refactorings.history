@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 1 element(s) from project &apos;Doodles&apos;&#x0D;&#x0A;- Original project: &apos;Doodles&apos;&#x0D;&#x0A;- Original element: &apos;errors.usingifthen.java&apos;" description="Delete element" element1="/&lt;errors{usingifthen.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1264664732188" subPackages="false" version="1.0"/>
+</session>

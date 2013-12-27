@@ -1,0 +1,3 @@
+wordies.exe
+cls
+exit

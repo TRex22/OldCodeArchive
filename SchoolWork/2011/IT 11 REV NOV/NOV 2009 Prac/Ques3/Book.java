@@ -1,0 +1,45 @@
+package Ques3;
+
+public class Book {
+	private int bookNo;
+	private String author;
+	private String title;
+	private String media;
+	private String library;
+
+	public Book (int No, String a, String t, String m, String l)
+	{
+		bookNo = No;
+		author = a;
+		title= t;
+		media = m;
+		library = l;
+	}
+
+	//public void setTitle(String title) {
+	//	this.title = title;
+	//}
+
+	public String getTitle() {
+		return title;
+	}
+	public String getmedia(){
+		return media;
+	}
+	public String toString()
+	{
+		String fields = "Accession Number     Author     title     media     library\n";
+		fields += "bookno     "+author+"      "+title+"     "+media+"      "+library+"     ";
+
+
+
+
+
+		return fields;
+	}
+
+
+
+
+
+}

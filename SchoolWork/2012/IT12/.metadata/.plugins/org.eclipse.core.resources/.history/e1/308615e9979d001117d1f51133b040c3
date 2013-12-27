@@ -1,0 +1,35 @@
+package myXYZTrading;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class EmpArray {
+	private Employee[] arrEmp = new Employee[50];
+	private int size;
+	
+	public EmpArray()
+	{
+		size = 0;
+		try {
+			Scanner scFile = new Scanner(new File("XYZ.txt"));
+			while (scFile.hasNext())
+			{
+				Scanner scLine = new Scanner(scFile.nextLine()).useDelimiter("#");
+				String firstName = sc;
+				String surname;
+				String dob;//ccyymmdd
+				Double salary;
+				int dependent;
+				char medAid;
+			}
+			
+			scFile.close();
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+	}
+	
+	
+}

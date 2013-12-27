@@ -1,0 +1,9 @@
+package myXYZTrading;
+
+public class EmpArray {
+	private Employee[] arrEmp = new Employee[50];
+	private int size;
+	
+	
+	
+}

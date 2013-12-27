@@ -1,0 +1,13 @@
+package myQ2;
+
+public class SecurityDigit {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

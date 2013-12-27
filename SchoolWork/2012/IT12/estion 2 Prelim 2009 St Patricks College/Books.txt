@@ -1,0 +1,12 @@
+100#Philosophy#Descartes,R#Essais Philosophiques(Philosophical Essays)
+826#English Fiction#Patterson,J#Three Blind Mice
+826#English Fiction#Smith,W#Assegai#Reserved
+826#English Fiction#King,S#Night Shift#Reserved
+826#English Fiction#Koontz,D#Forever Odd
+826#English Fiction#Roberts,GD#Shantaram
+826#English Fiction#Patterson,J Been Warned
+826#English Fiction#Patterson,j#Cross
+610#Medicine#Friedland,Dr L#Ultimate Guide to Women's Heath#reserved
+001#Computers#Negrino,T#DreamweaverCS4#reserved
+001#Computers#Osborne,T#Delphi
+

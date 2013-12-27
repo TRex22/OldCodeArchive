@@ -1,0 +1,20 @@
+package myPerson;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//instanciate an object of the person class
+		//declare object and then use the word new and the constructor
+		Person person = new Person();
+		//use default constructor
+		
+		//Use parametarised constructor
+		
+		//Display both
+
+	}
+
+}

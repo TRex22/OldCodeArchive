@@ -1,0 +1,53 @@
+Creating elements for MainGUI.java
+
+
+>>>  about to create class java.awt.Color, constructor=public java.awt.Color(int,int,int)
+
+    >>>  about to create class java.awt.Color
+    <<< error creating class java.awt.Color, java.lang.NoSuchMethodException: java.awt.Color.<init>()
+<<< created class java.awt.Color
+
+>>>  about to create class javax.swing.JFrame, constructor=public javax.swing.JFrame() throws java.awt.HeadlessException
+<<< created class javax.swing.JFrame
+
+>>>  about to create class javax.swing.JTextField, constructor=public javax.swing.JTextField()
+<<< created class javax.swing.JTextField
+
+>>>  about to create class javax.swing.JScrollPane, constructor=public javax.swing.JScrollPane()
+<<< created class javax.swing.JScrollPane
+
+>>>  about to create class javax.swing.ScrollPaneLayout
+<<< created class javax.swing.ScrollPaneLayout
+
+>>>  about to create class javax.swing.ScrollPaneLayout$UIResource
+<<< created class javax.swing.ScrollPaneLayout$UIResource
+
+>>>  about to create class javax.swing.JTextArea, constructor=public javax.swing.JTextArea()
+<<< created class javax.swing.JTextArea
+
+>>>  about to create class javax.swing.JMenuBar, constructor=public javax.swing.JMenuBar()
+<<< created class javax.swing.JMenuBar
+
+>>>  about to create class javax.swing.JMenu, constructor=public javax.swing.JMenu()
+<<< created class javax.swing.JMenu
+
+>>>  about to create class javax.swing.JMenu, constructor=public javax.swing.JMenu()
+<<< created class javax.swing.JMenu
+
+>>>  about to create class javax.swing.JMenuItem, constructor=public javax.swing.JMenuItem()
+<<< created class javax.swing.JMenuItem
+
+>>>  about to create class javax.swing.JMenuItem, constructor=public javax.swing.JMenuItem()
+<<< created class javax.swing.JMenuItem
+
+>>>  about to create class javax.swing.JMenuItem, constructor=public javax.swing.JMenuItem()
+<<< created class javax.swing.JMenuItem
+
+>>>  about to create class javax.swing.JMenuItem, constructor=public javax.swing.JMenuItem()
+<<< created class javax.swing.JMenuItem
+
+>>>  about to create class javax.swing.JMenu, constructor=public javax.swing.JMenu()
+<<< created class javax.swing.JMenu
+
+>>>  about to create class javax.swing.JMenuItem, constructor=public javax.swing.JMenuItem()
+<<< created class javax.swing.JMenuItem

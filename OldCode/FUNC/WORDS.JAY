@@ -1,0 +1,124 @@
+Function begi  : string;
+
+begin
+sound(650);
+delay(300);
+sound(450);
+delay(300);
+sound(250);
+delay(300);
+sound(300);
+delay(500);
+sound(200);
+delay(200);
+sound(900);
+delay(250);
+nosound;
+end;
+
+Function invalid_characters : string;
+
+
+type st50 = string[50];
+var st : st50;
+    eat : string;
+function invalid (fst : st50 ) : boolean;
+var found : boolean;
+    count : byte;
+
+begin
+     found := false;
+     count := 0;
+     while (count < length(fst)) and (not found) do
+     begin
+          count := count + 1;
+          fst[count] := upcase(fst[count] );
+          if (fst[count] = 'I') or (fst[count] = 'O')
+                     then found := true;
+     end;
+     InValid := found;
+end;
+
+begin                   {main Program}
+
+writeln( 'Please enter the code to be checked ... ' );
+writeln( 'To exit type ''checked'' ');
+read(st);
+
+   if InValid(st) then
+   begin
+   readln;
+   writeln( st,' does contain Is and Os' );
+   readln;
+   end;
+
+   if not InValid(st) then begin
+   readln;
+   writeln(st,' does not contain any Is or Os' );
+   readln;
+   end;
+
+   if (st = '' ) then
+   begin
+   writeln( 'Please type some code in.' );
+   readln;
+   end;
+end;
+
+Function deleteme : string;
+
+var stg : string;
+    lt : string;
+begin
+
+writeln( '12 letter word or sentence' );
+read(stg);
+delete (stg, 2, 6);
+writeln (stg);
+delete (stg, 5 , 3);
+writeln (stg);
+delete (stg, 3, 1);
+writeln (stg);
+readln;
+end;
+
+Function change_2_num : string;
+type nums = 1..26;
+
+var ch : char;
+    num : nums;
+
+        Function change(fch:char):nums;                         {4.1}
+        begin
+             change := ord(fch) - 64;                           {4.2}
+        end;                                                    {4.3}
+
+begin {main}
+
+      write( 'Enter Character or word or sentence: ');          {1}
+      readln(ch);                                               {2}
+      ch := upcase(ch);                                         {3}
+      num := change(ch);                                        {4}
+      writeln(ch,' is letter no. ',num);                        {5}
+      readln;
+
+end;
+
+Function copyme : string;
+
+
+var loop : byte;
+    wrd  : string[20];
+    temp : string[20];
+
+
+     begin
+
+     write( 'Enter a word : ' );
+     read(wrd);
+
+     writeln;
+     temp := copy(wrd, 1, 3);                                     {1}
+     writeln( 'The first three letters are : ',temp);
+     readln;
+end;

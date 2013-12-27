@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Fri Feb 26 09:57:47 GMT+02:00 2010
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=Page 71 Activity 15_fat.jar
+manifest.mergeall=true
+manifest.mainclass=myUsingMathMethods.UsingMathMethods
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

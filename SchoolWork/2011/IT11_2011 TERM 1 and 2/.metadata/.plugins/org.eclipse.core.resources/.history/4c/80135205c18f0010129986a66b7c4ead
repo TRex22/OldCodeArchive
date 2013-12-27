@@ -1,0 +1,29 @@
+package myPalindrome;
+
+import javax.swing.JOptionPane;
+
+public class UsePalindrome {
+
+	/**
+	 *
+	 */
+	public static void main(String[] args) {
+		String out = "";
+		Palindrome palin = new Palindrome();
+		for (int i = 1 ; i<= 10 ; i++)
+		{
+			String input = JOptionPane.showInputDialog("Enter in a five letter palindrome "+i);
+			palin.setInput(input);
+			palin.removeInvalid();
+			out += palin.determinePalindrome()+"\n";
+
+
+		}
+
+
+
+
+
+	}
+
+}

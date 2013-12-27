@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu Mar 18 13:27:38 GMT+02:00 2010
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=Page 74 Exercise 9 Number 3_4_fat.jar
+manifest.mergeall=true
+manifest.mainclass=myColdDrinks.ColdDrinks
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=
