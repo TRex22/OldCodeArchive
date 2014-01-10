@@ -1,0 +1,65 @@
+package myNetworkLocalClasses;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+import javax.swing.JOptionPane;
+
+public class getAddress {
+
+	/**
+	 * @param args
+	 * @throws UnknownHostException 
+	 */
+
+
+	private static UnknownHostException error;
+	private String errReturn;
+	public getAddress()
+	{
+	//	setError("No Errors Detected");
+		errReturn = "";
+	}
+	public static void main(String[] args){//throws UnknownHostException {
+		//System.out.println(InetAddress.getLocalHost());
+		
+		if (error == null)
+		{
+			setErrReturn("No Errors Detected");
+		}
+		else
+		{
+			setErrReturn(""+error);
+		}
+		JOptionPane.showMessageDialog(null, "Ip Address: "+getIPAddr()+"\nErrors: "+getErrReturn());
+
+	}
+	public static InetAddress getIPAddr()
+	{
+		InetAddress ipAddress = null;
+		try {
+			ipAddress = InetAddress.getLocalHost();
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			error = e;
+		}
+
+
+		return ipAddress;
+
+	}
+	//public String getError() {
+	//	return error;
+	//}
+	//public void setError(String error) {
+	//	this.error = error;
+	//}
+	public String getErrReturn() {
+		return errReturn;
+	}
+	public void setErrReturn(String errReturn) {
+		this.errReturn = errReturn;
+	}
+
+}

@@ -1,0 +1,28 @@
+package myAlogrithmTests;
+
+import javax.swing.JOptionPane;
+
+public class ImperativeSqrtDeduction {
+
+	/**
+	 * This will deduce a sqrt using the algorithm created by
+	 * Heron of Alexandria
+	 * 
+	 * found on MIT Lecture
+	 * Lec 1 | MIT 6.00 Introduction to Computer Science and Programming, Fall 2008 
+	 * http://www.youtube.com/watch?v=k6U-i4gXkLM
+	 * 
+	 * Start with a guess G
+	 * if G^2 #= (ie close to) X, Stop -->(return) G
+	 * else G <--- (G+X/G)/2
+	 * Repeat from step one 
+	 */
+	public static void main(String[] args) {
+		double G = Double.parseDouble(JOptionPane.showInputDialog("Input Guess G"));
+		
+		
+		
+		
+	}
+
+}

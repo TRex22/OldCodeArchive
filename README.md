@@ -22,6 +22,10 @@ There are also my feeble attempts at the Computer Olimpiad in 2011 and 2012.
 Some of the work is from exercises I did in class - I tended not to to do exactly what was asked but
 do my own thing.
 
+	\CodeExperiments contains code experiments which I have done from 2009-2012/3
+These are experimental code, tutorials or other strange things I have attempted to do.
+Most of it is non functional and just stored here so I can get it off my Dropbox folder.
+
 The code here is not particularly good, but I would not like to loose it which is why I
 am making a git repo for it.
 

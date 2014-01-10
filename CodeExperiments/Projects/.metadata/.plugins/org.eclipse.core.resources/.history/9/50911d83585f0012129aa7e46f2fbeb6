@@ -1,0 +1,81 @@
+package myCoolApps;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+import java.io.IOException;
+
+public class BotType {
+
+	/**
+	 * http://www.codeproject.com/Articles/227478/Cool-Java-Programs
+	 * @throws IOException 
+	 * @throws InterruptedException 
+	 * @throws AWTException 
+	 */
+	public static void main(String[] args) throws IOException, InterruptedException, AWTException {
+		Runtime.getRuntime().exec("notepad.exe");
+		
+		Thread.sleep(2000);
+		Robot r=new Robot();
+		r.keyPress(KeyEvent.VK_T);
+		Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_H);
+		Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_I);
+		Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_S);
+		Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_SPACE);
+		Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_I);
+		Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_S);
+		Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_SPACE);
+		Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_F);
+		Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_U);
+		Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_N);
+		
+		
+		//addition: Clipboard add
+		StringSelection ss = new StringSelection("\nA Test of a clipboard dump\n\n");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+		r.keyPress(KeyEvent.VK_CONTROL);
+        r.keyPress(KeyEvent.VK_V);
+        r.keyRelease(KeyEvent.VK_V);
+        r.keyRelease(KeyEvent.VK_CONTROL);
+        
+        //no timing
+        r.keyPress(KeyEvent.VK_T);
+		//Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_E);
+		//Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_S);
+		//Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_T);
+		//Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_SPACE);
+		//Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_N);
+		//Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_O);
+		//Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_SPACE);
+		//Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_T);
+		//Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_I);
+		//Thread.sleep(500);
+		r.keyPress(KeyEvent.VK_M);
+		r.keyPress(KeyEvent.VK_I);
+		r.keyPress(KeyEvent.VK_N);
+		r.keyPress(KeyEvent.VK_G);
+	}
+
+}

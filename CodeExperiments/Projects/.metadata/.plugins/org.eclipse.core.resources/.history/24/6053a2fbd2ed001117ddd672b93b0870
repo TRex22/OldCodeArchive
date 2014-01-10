@@ -1,0 +1,47 @@
+package myNetworkLocalClasses;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+import javax.swing.JOptionPane;
+
+public class getAddress {
+
+	/**
+	 * @param args
+	 * @throws UnknownHostException 
+	 */
+
+
+	private String error;
+	public getAddress()
+	{
+		setError("");
+	}
+	public static void main(String[] args) throws UnknownHostException {
+		//System.out.println(InetAddress.getLocalHost());
+		JOptionPane.showMessageDialog(null, "Ip Address: "+getIPAddr());
+
+	}
+	public static InetAddress getIPAddr()
+	{
+		InetAddress ipAddress = null;
+		try {
+			ipAddress = InetAddress.getLocalHost();
+		} catch (UnknownHostException error) {
+			// TODO Auto-generated catch block
+			error.printStackTrace();
+		}
+
+
+		return ipAddress;
+
+	}
+	public String getError() {
+		return error;
+	}
+	public void setError(String error) {
+		this.error = error;
+	}
+
+}

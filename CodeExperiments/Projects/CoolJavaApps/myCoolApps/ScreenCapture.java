@@ -1,0 +1,30 @@
+package myCoolApps;
+
+import java.awt.AWTException;
+import java.awt.Dimension;
+import java.awt.Rectangle;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+public class ScreenCapture {
+
+	/**
+	 * http://www.codeproject.com/Articles/227478/Cool-Java-Programs
+	 * @throws IOException 
+	 * @throws AWTException 
+	 */
+	public static void main(String[] args) throws IOException, AWTException {
+		Dimension size = Toolkit.getDefaultToolkit().getScreenSize();
+		Robot robot = new Robot();
+		BufferedImage img = robot.createScreenCapture(new Rectangle(size));
+		File save_path=new File("screen.jpg");
+		ImageIO.write(img, "JPG", save_path);	 
+
+	}
+
+}

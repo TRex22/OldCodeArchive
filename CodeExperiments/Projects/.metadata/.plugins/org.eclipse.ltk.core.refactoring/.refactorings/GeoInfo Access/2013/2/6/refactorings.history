@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;StickySort/stickySort&apos;&#x0D;&#x0A;- Original project: &apos;GeoInfo Access&apos;&#x0D;&#x0A;- Destination element: &apos;StickySort/stickySort&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     myGeoInfo.SaveFile.java&#x0D;&#x0A;     myGeoInfo.OpenFile.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="=StickySort/&lt;stickySort" element1="/&lt;myGeoInfo{SaveFile.java" element2="/&lt;myGeoInfo{OpenFile.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1360425110993" units="2" version="1.0"/>
+</session>

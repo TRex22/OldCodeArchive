@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 1 resources to &apos;cool_projects_SRC_codeproject.com&apos;" description="Move 1 resources to &apos;cool_projects_SRC_codeproject.com&apos;" destination="cool_projects_SRC_codeproject.com" element1="TaskManagerProcess.java" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1358274405297" updateReferences="true"/>
+</session>

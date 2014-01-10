@@ -1,0 +1,35 @@
+package myGetAddress;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class getAddress {
+
+	/**
+	 * @param args
+	 * @throws UnknownHostException 
+	 */
+	
+	
+	private String error;
+	public getAddress()
+	{
+		setError("");
+	}
+	public static void main(String[] args) throws UnknownHostException {
+		System.out.println(InetAddress.getLocalHost());
+		
+	}
+	public InetAddress getIPAddr()
+	{
+		InetAddress ipAddress = InetAddress.getLocalHost();
+		return ipAddress;
+	}
+	public String getError() {
+		return error;
+	}
+	public void setError(String error) {
+		this.error = error;
+	}
+
+}

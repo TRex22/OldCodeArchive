@@ -1,0 +1,24 @@
+package myGetAddress;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class getAddress {
+
+	/**
+	 * @param args
+	 * @throws UnknownHostException 
+	 */
+	
+	//fileds
+	private InetAddress ipAddress = InetAddress.getLocalHost();
+	public static void main(String[] args) throws UnknownHostException {
+		System.out.println(InetAddress.getLocalHost());
+		
+	}
+	public InetAddress getIPAddr()
+	{
+		return ipAddress;
+	}
+
+}

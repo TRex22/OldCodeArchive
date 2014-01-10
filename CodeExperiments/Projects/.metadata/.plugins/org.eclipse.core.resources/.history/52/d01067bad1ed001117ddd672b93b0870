@@ -1,0 +1,15 @@
+package myGetAddress;
+
+import java.net.InetAddress;
+
+public class getAddress {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println(InetAddress.getLocalHost());
+
+	}
+
+}

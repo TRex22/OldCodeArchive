@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Fri Sep 28 16:25:27 CAT 2012
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=Telnet_Server_FAT.jar
+manifest.mergeall=true
+manifest.mainclass=myserver.TelnetServerR
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=
